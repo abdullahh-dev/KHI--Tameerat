@@ -11,14 +11,14 @@ function HomeHeroSec() {
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-45 brightness-[0.43]"
           alt=""
         />
-        <div className="max-w-[1440px] relative text-white mx-auto w-full h-full flex flex-col justify-center items-center gap-4">
+        <div className="max-w-[1440px] px-[20px] relative text-white mx-auto w-full h-full flex flex-col justify-center items-center">
           <p className="uppercase text-center md:text-[18px] text-[12px] font-semibold tracking-[4px] md:tracking-[6px] text-[#9dd221]">
             Building Beyond Boundaries
           </p>
           <h1 className="max-w-[800px] text-[48px] md:text-[90px] text-center font-extrabold leading-tight md:leading-[88px]">
             We are your trusted <span className="text-[#9dd221]">Builder</span>
           </h1>
-          <p className="max-w-[780px] text-center text-[17px] tracking-wider mt-6 leading-relaxed">
+          <p className="max-w-[780px] text-center text-[12px] md:text-[17px] tracking-wider mt-6 leading-relaxed">
             KHI Tameerat your trusted partner in bringing your dreams to life.
             Weather you are planning a new construction project, remodeling an
             existing space or simply need accurate cost estimation, KHI Tameraat
