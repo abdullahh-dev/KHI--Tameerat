@@ -12,10 +12,10 @@ function HomeHeroSec() {
           alt=""
         />
         <div className="max-w-[1440px] relative text-white mx-auto w-full h-full flex flex-col justify-center items-center gap-4">
-          <p className="uppercase text-center text-[18px] font-semibold tracking-[6px] text-[#9dd221]">
+          <p className="uppercase text-center md:text-[18px] text-[12px] font-semibold tracking-[4px] md:tracking-[6px] text-[#9dd221]">
             Building Beyond Boundaries
           </p>
-          <h1 className="max-w-[800px] text-[90px] text-center font-extrabold leading-[88px]">
+          <h1 className="max-w-[800px] text-[60px] md:text-[90px] text-center font-extrabold leading-tight md:leading-[88px]">
             We are your trusted <span className="text-[#9dd221]">Builder</span>
           </h1>
           <p className="max-w-[780px] text-center text-[17px] tracking-wider mt-6 leading-relaxed">
