@@ -19,7 +19,7 @@ function NavLinks() {
 
   return (
     <div>
-      <nav className="bg-[#323232]  relative border-gray-200">
+      <nav className="bg-[#333333]  relative border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="#"
@@ -56,7 +56,7 @@ function NavLinks() {
             </svg>
           </button>
           <div
-            className={`absolute ${menuBarV} bg-[#323232] top-16 left-0 md:relative md:top-0 lg:relative lg:top-0 lg:left-0 w-full md:block md:w-auto`}
+            className={`absolute ${menuBarV} bg-[#333333] top-16 left-0 md:relative md:top-0 lg:relative lg:top-0 lg:left-0 w-full md:block md:w-auto`}
             id="navbar-dropdown">
             <ul className="flex flex-col font-medium text-white p-4 md:p-0 sm:shadow-sm shadow-[#9dd221]  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
@@ -97,7 +97,7 @@ function NavLinks() {
                 </button>
                 <div
                   id="dropdownNavbar"
-                  className={`${dropDownV} z-10 bg-[#323232] border border-gray-600 text-white absolute font-normal divide-y divide-gray-100 rounded-lg shadow w-44`}>
+                  className={`${dropDownV} z-10 bg-[#333333] border border-gray-600 text-white absolute font-normal divide-y divide-gray-100 rounded-lg shadow w-44`}>
                   <ul
                     className="py-2 text-sm text-white "
                     aria-labelledby="dropdownLargeButton">
