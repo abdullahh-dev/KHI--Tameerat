@@ -25,14 +25,14 @@ function HomeHeroSec() {
             have got you covered. With expertise in every aspect of the building
             process, from concept to completion, we make your vision a reality.
           </p>
-          <span className="space-x-4 mt-6 font-semibold">
+          <span className="flex flex-col w-full justify-center md:flex-row gap-4 md:space-x-4 mt-6 font-semibold">
             <button className="bg-[#9dd221] group px-[14px] py-[8px] rounded-[4px]">
               Get in touch
               <span>
                 <FaLongArrowAltRight className="inline ml-1 group-hover:translate-x-[2px] transition-all duration-500" />
               </span>
             </button>
-            <button className="bg-[#ffffff54] border  px-[14px] py-[8px] group rounded-[4px]">
+            <button className="bg-[#ffffff54] border px-[14px] py-[8px] group rounded-[4px]">
               Get in touch
               <span>
                 <FaLongArrowAltRight className="inline ml-1 group-hover:translate-x-[2px] transition-all duration-500" />
