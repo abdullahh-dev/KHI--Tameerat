@@ -8,7 +8,7 @@ import NavLinks from './NavLinks';
 function Navbar() {
   return (
     <div>
-      <div className="bg-[#9ED220]">
+      <div className="bg-[#9dd221]">
         <div className="max-w-[1440px] py-[10px] m-auto">
           <div className="flex justify-between items-center">
             <h1 className="text-[#323232] font-semibold ">(+92)-312 1955286</h1>
@@ -22,7 +22,7 @@ function Navbar() {
               <button>
                 <FaSquareFacebook size={24} />
               </button>
-              <button className="px-[14px] text-[14px] font-semibold  py-[8px] rounded-[4px] text-[#9ED220] bg-[#323232]">
+              <button className="px-[14px] text-[14px] font-semibold  py-[8px] rounded-[4px] text-[#9dd221] bg-[#323232]">
                 Contact Us
               </button>
             </span>
