@@ -1,11 +1,17 @@
 import React from 'react';
+import logo from '../../assets/images/logo/KHI-Green.png';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 function HomeHeroSec() {
   return (
     <>
       <div
         className={`w-full relative h-[85vh] bg-cover bg-[url('/src/assets/images/mainimg.jpg')]`}>
-        <div className="max-w-[1440px] text-white mx-auto w-full h-full flex flex-col justify-center items-center gap-4">
+        <img
+          src={logo}
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-45 brightness-[0.43]"
+          alt=""
+        />
+        <div className="max-w-[1440px] relative text-white mx-auto w-full h-full flex flex-col justify-center items-center gap-4">
           <p className="uppercase text-center text-[18px] font-semibold tracking-[6px] text-[#9dd221]">
             Building Beyond Boundaries
           </p>

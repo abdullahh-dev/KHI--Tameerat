@@ -6,11 +6,11 @@ function HServicesSec() {
   return (
     <div className="max-w-[1440px] m-auto mt-[110px]">
       <span className="flex justify-center">
-        <h1 className="px-[28px]  py-[8px] bg-[#323232] rounded-full uppercase text-[18px] font-semibold tracking-[5px] text-[#9ED220]">
+        <h1 className="px-[28px]  py-[8px] bg-[#333333] rounded-full uppercase text-[18px] font-semibold tracking-[5px] text-[#9ED220]">
           Our Services
         </h1>
       </span>
-      <h1 className="text-center mb-[90px] leading-tight mt-[32px] font-extrabold text-[40px] m-auto text-[#323232] max-w-[535px]">
+      <h1 className="text-center mb-[90px] leading-tight mt-[32px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[535px]">
         Excellence in construction and other services
       </h1>
       <div className="flex flex-col flex-wrap items-center gap-6 md:flex-row md:gap-[48px] md:justify-center ">

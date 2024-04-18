@@ -24,13 +24,8 @@ function NavLinks() {
           <a
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8"
-              alt="Logo"
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap">
-              KHI TAMEERAT
+            <span className="self-center text-2xl text-white font-semibold whitespace-nowrap">
+              <span className="text-[#9dd221]">KHI</span> TAMEERAT
             </span>
           </a>
           <button
