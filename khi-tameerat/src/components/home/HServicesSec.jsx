@@ -26,26 +26,47 @@ function HServicesSec() {
           </div>
           <div>
             <img
-              className="h-full w-full group-hover:brightness-[0.6] transition-all duration-1000 brightness-[0.31] object-contain"
+              className="h-full w-full group-hover:brightness-[0.6] transition-all duration-1000 brightness-[0.28] object-contain"
               src={constructionImg}
               alt="construction"
             />
           </div>
         </div>
-        <div className="max-w-[340px] relative h-[410px] rounded-[2px]">
-          <img
-            className="h-full brightness-[0.5] object-contain"
-            src={estimationImg}
-            alt="estimation"
-          />
+        <div className="max-w-[340px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[2px]">
+          <div className="absolute bottom-[-20px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
+            <h1 className="text-[36px] font-semibold">Estimation</h1>
+            <span className="opacity-0 group-hover:opacity-100 transition-all duration-700 ">
+              <hr className="border-[1px]" />
+              <button className=" border-[2px] p-2 mt-4 text-[12px]">
+                View Details
+              </button>
+            </span>
+          </div>
+          <div>
+            <img
+              className="h-full w-full group-hover:brightness-[0.6] transition-all duration-1000 brightness-[0.28] object-contain"
+              src={estimationImg}
+              alt="estimation"
+            />
+          </div>
         </div>
-
-        <div className="max-w-[340px] h-[410px] rounded-[2px]">
-          <img
-            className="h-full object-contain"
-            src={renovationImg}
-            alt="renovation"
-          />
+        <div className="max-w-[340px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[2px]">
+          <div className="absolute bottom-[-20px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
+            <h1 className="text-[36px] font-semibold">Renovation</h1>
+            <span className="opacity-0 group-hover:opacity-100 transition-all duration-700 ">
+              <hr className="border-[1px]" />
+              <button className=" border-[2px] p-2 mt-4 text-[12px]">
+                View Details
+              </button>
+            </span>
+          </div>
+          <div>
+            <img
+              className="h-full w-full group-hover:brightness-[0.6] transition-all duration-1000 brightness-[0.28] object-contain"
+              src={renovationImg}
+              alt="renovation"
+            />
+          </div>
         </div>
       </div>
     </div>
