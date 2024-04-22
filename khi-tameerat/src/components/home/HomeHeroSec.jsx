@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../assets/images/logo/KHI-Green.png';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 function HomeHeroSec() {
   return (

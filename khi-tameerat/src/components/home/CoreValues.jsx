@@ -20,7 +20,7 @@ function CoreValues() {
             <div className="flex flex-col w-[300px]  hover:bg-[#282828] space-y-4 rounded-md p-2 transition-all duration-500 gap-y-2  items-center">
               <span className="text-[#9ED220]">
                 {' '}
-                <FaUserGraduate size={80} />{' '}
+                <FaUserGraduate size={60} />{' '}
               </span>
               <p className="text-white text-[18px] font-semibold">
                 Experienced Professionals
@@ -29,7 +29,7 @@ function CoreValues() {
             <div className="flex flex-col hover:bg-[#282828] space-y-4 rounded-md p-2 transition-all duration-500 gap-y-2 w-[300px] items-center">
               <span className="text-[#9ED220]">
                 {' '}
-                <HiBadgeCheck size={80} />{' '}
+                <HiBadgeCheck size={60} />{' '}
               </span>
               <p className="text-white text-[18px] font-semibold">
                 Quality Assurance
@@ -38,7 +38,7 @@ function CoreValues() {
             <div className="flex flex-col hover:bg-[#282828] space-y-4 rounded-md p-2 transition-all duration-500 gap-y-2 w-[300px] items-center">
               <span className="text-[#9ED220]">
                 {' '}
-                <FaHandshake size={80} />{' '}
+                <FaHandshake size={60} />{' '}
               </span>
               <p className="text-white text-[18px] font-semibold">
                 Client Centric Approach
@@ -47,7 +47,7 @@ function CoreValues() {
             <div className="flex flex-col hover:bg-[#282828] space-y-4 rounded-md p-2 transition-all duration-500 gap-y-2 w-[300px] items-center">
               <span className="text-[#9ED220]">
                 {' '}
-                <MdEco size={80} />{' '}
+                <MdEco size={60} />{' '}
               </span>
               <p className="text-white text-[18px] font-semibold">
                 Eco-Friendly Practices
@@ -57,7 +57,7 @@ function CoreValues() {
             <div className="flex flex-col hover:bg-[#282828] space-y-4 rounded-md p-2 transition-all duration-500 gap-y-2 w-[300px] items-center">
               <span className="text-[#9ED220]">
                 {' '}
-                <IoIosPricetag size={80} />{' '}
+                <IoIosPricetag size={60} />{' '}
               </span>
               <p className="text-white text-[18px] font-semibold">
                 Budget Friendly Options
@@ -66,7 +66,7 @@ function CoreValues() {
             <div className="flex flex-col hover:bg-[#282828] space-y-4 rounded-md p-2 transition-all duration-500 gap-y-2 w-[300px] items-center">
               <span className="text-[#9ED220]">
                 {' '}
-                <TbBulbFilled size={80} />{' '}
+                <TbBulbFilled size={60} />{' '}
               </span>
               <p className="text-white text-[18px] font-semibold">
                 Innovative Design
@@ -75,7 +75,7 @@ function CoreValues() {
             <div className="flex flex-col hover:bg-[#282828] space-y-4 rounded-md p-2 transition-all duration-500 gap-y-2 w-[300px] items-center">
               <span className="text-[#9ED220]">
                 {' '}
-                <IoMdClock size={80} />{' '}
+                <IoMdClock size={60} />{' '}
               </span>
               <p className="text-white text-[18px] font-semibold">
                 Flexible Scheduling
@@ -84,7 +84,7 @@ function CoreValues() {
             <div className="flex flex-col hover:bg-[#282828] space-y-4 rounded-md p-2 transition-all duration-500 gap-y-2 w-[300px] items-center">
               <span className="text-[#9ED220]">
                 {' '}
-                <FaUserGear size={80} />{' '}
+                <FaUserGear size={60} />{' '}
               </span>
               <p className="text-white text-[18px] font-semibold">
                 Personalized Solutions

@@ -11,12 +11,6 @@ function NavLinks() {
     setDropDownV(dropDownV === 'hidden' ? 'block' : 'hidden');
   };
 
-  useEffect(() => {
-    document.addEventListener('mousedown', () => {
-      setDropDownV('hidden');
-    });
-  });
-
   return (
     <div>
       <nav className="bg-[#333333]  relative border-gray-200">
@@ -51,7 +45,7 @@ function NavLinks() {
             </svg>
           </button>
           <div
-            className={`absolute ${menuBarV} bg-[#333333] top-16 left-0 md:relative md:top-0 lg:relative lg:top-0 lg:left-0 w-full md:block md:w-auto`}
+            className={`absolute ${menuBarV} z-[999999999] bg-[#333333] top-16 left-0 md:relative md:top-0 lg:relative lg:top-0 lg:left-0 w-full md:block md:w-auto`}
             id="navbar-dropdown">
             <ul className="flex flex-col font-medium text-white p-4 md:p-0 sm:shadow-sm shadow-[#9dd221]  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
@@ -97,11 +91,15 @@ function NavLinks() {
                     className="py-2 text-sm text-white "
                     aria-labelledby="dropdownLargeButton">
                     <li>
-                      <a
+                      <button
+                        onClick={() => {
+                          setDropDownVisibility('hidden');
+                          setMenuBarV('hidden');
+                        }}
                         href="#"
                         className="block px-4 py-2 hover:text-[#9dd221]">
                         Construction
-                      </a>
+                      </button>
                     </li>
                     <li>
                       <a
