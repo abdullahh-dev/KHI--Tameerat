@@ -32,7 +32,7 @@ function HServicesSec() {
             />
           </div>
         </div>
-        <div className="max-w-[340px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[2px]">
+        <div className="max-w-[640px] lg:max-w-[340px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[2px]">
           <div className="absolute bottom-[-20px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
             <h1 className="text-[36px] font-semibold">Estimation</h1>
             <span className="opacity-0 group-hover:opacity-100 transition-all duration-700 ">
