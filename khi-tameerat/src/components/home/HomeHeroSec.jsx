@@ -12,24 +12,24 @@ function HomeHeroSec() {
           <h1 className="max-w-[800px] text-[56px] md:text-[96px] text-center font-extrabold leading-[56px] md:leading-[88px]">
             We are your trusted <span className="text-[#9dd221]">Builder</span>
           </h1>
-          <p className="max-w-[780px] text-center text-[12px] md:text-[17px] tracking-wider mt-2 md:mt-12 leading-relaxed">
-            KHI Tameerat your trusted partner in bringing your dreams to life.
+          <p className="max-w-[780px] text-[#cccccc] text-center text-[14px] md:text-[16px] tracking-wider mt-2 md:mt-12 leading-snug">
+            KHI Tameraat your trusted partner in bringing your dreams to life.
             Weather you are planning a new construction project, remodeling an
             existing space or simply need accurate cost estimation, KHI Tameraat
             have got you covered. With expertise in every aspect of the building
             process, from concept to completion, we make your vision a reality.
           </p>
-          <span className="flex flex-col w-full justify-center md:flex-row gap-4 md:space-x-4 mt-4 md:mt-12 font-semibold">
-            <button className="bg-[#9dd221] group px-[14px] py-[8px] rounded-[4px]">
-              Get in touch
+          <span className="flex flex-col w-full justify-center md:flex-row gap-2 md:space-x-4 mt-4 md:mt-12 font-semibold">
+            <button className="bg-[#9dd221] text-[14px] group px-[14px] text-black py-[6px] rounded-[4px]">
+              Get in Touch
               <span>
-                <FaLongArrowAltRight className="inline ml-1 group-hover:translate-x-[2px] transition-all duration-500" />
+                <FaLongArrowAltRight className="inline ml-[2px] mb-[2px] group-hover:translate-x-[3px] transition-all duration-500" />
               </span>
             </button>
-            <button className="bg-[#ffffff54] border px-[14px] py-[8px] group rounded-[4px]">
-              Get in touch
+            <button className="bg-white/20 border text-[14px] px-[14px] py-[6px] group rounded-[4px]">
+              Learn More
               <span>
-                <FaLongArrowAltRight className="inline ml-1 group-hover:translate-x-[2px] transition-all duration-500" />
+                <FaLongArrowAltRight className="inline ml-[2px] group-hover:translate-x-[3px] transition-all duration-500" />
               </span>
             </button>
           </span>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { NavLink } from 'react-router-dom';
 function NavLinks() {
   const [menuBarV, setMenuBarV] = useState('hidden');
   const [dropDownV, setDropDownV] = useState('hidden');
@@ -18,8 +18,8 @@ function NavLinks() {
           <a
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse">
-            <span className="self-center text-2xl text-white font-semibold whitespace-nowrap">
-              <span className="text-[#9dd221]">KHI</span> TAMEERAT
+            <span className="self-center text-2xl text-white uppercase font-semibold whitespace-nowrap">
+              <span className="text-[#9dd221]">Khi</span> Tameraat
             </span>
           </a>
           <button
@@ -47,7 +47,7 @@ function NavLinks() {
           <div
             className={`absolute ${menuBarV} z-[999999999] bg-[#333333] top-16 left-0 md:relative md:top-0 lg:relative lg:top-0 lg:left-0 w-full md:block md:w-auto`}
             id="navbar-dropdown">
-            <ul className="flex flex-col font-medium text-white p-4 md:p-0 sm:shadow-sm shadow-[#9dd221]  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <ul className="flex flex-col text-[14px] font-medium text-white p-4 md:p-0 sm:shadow-sm shadow-[#9dd221]  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <a
                   href="#"
@@ -58,7 +58,7 @@ function NavLinks() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 hover:text-[#9dd221]   md:p-0">
+                  className="block py-2 px-3 hover:text-[#9dd221] md:p-0">
                   About Us
                 </a>
               </li>
@@ -67,7 +67,7 @@ function NavLinks() {
                   onClick={setDropDownVisibility}
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  className="flex items-center justify-between w-full py-2 px-3 hover:text-[#9dd221]  md:p-0 md:w-auto  ">
+                  className="flex items-center justify-between w-full py-2 px-3 hover:text-[#9dd221]  md:p-0 md:w-auto">
                   Services
                   <svg
                     className="w-2.5 h-2.5 ms-2.5"

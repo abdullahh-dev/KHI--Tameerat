@@ -8,6 +8,9 @@ function Gallery() {
           Gallery
         </h1>
       </span>
+      <div className="mt-[90px]">
+        
+      </div>
     </div>
   );
 }
