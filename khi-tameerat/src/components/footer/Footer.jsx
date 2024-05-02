@@ -1,5 +1,8 @@
 import React from 'react';
 import logo from '../../assets/images/logo/KHI Green.png';
+import { IoIosMail } from 'react-icons/io';
+import { MdLocalPhone } from 'react-icons/md';
+import { IoLocation } from 'react-icons/io5';
 const Footer = () => {
   return (
     <footer className="bg-[#333333]">
@@ -10,17 +13,12 @@ const Footer = () => {
               <img src={logo} className="h-24 me-3" alt="FlowBite Logo" />
             </a>
           </div>
-          <div className="grid grid-cols-3 gap-8 sm:gap-12 lg:gap-40 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-y-8 sm:gap-8 lg:gap-24 sm:grid-cols-3">
             <div>
-              <h2 className="mb-5 text-[16px] font-semibold text-[#9ED220]">
+              <h2 className="mb-5 text-[18px] font-semibold text-[#9ED220]">
                 Links
               </h2>
-              <ul className="text-[#dbdbdb] space-y-2 text-[14px]">
-                <li>
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    Home
-                  </a>
-                </li>
+              <ul className="text-[#dbdbdb] space-y-2 text-[16px]">
                 <li>
                   <a
                     href="https://tailwindcss.com/"
@@ -45,14 +43,21 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-5 text-[16px] font-semibold text-[#9ED220]">
+              <h2 className="mb-5 text-[18px] font-semibold text-[#9ED220]">
                 Follow us
               </h2>
-              <ul className="text-[#dbdbdb] space-y-2 text-[14px]">
+              <ul className="text-[#dbdbdb] space-y-2 text-[16px]">
                 <li>
                   <a
                     href="https://github.com/themesberg/flowbite"
-                    className="hover:underline ">
+                    className="hover:underline antialiased ">
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://discord.gg/4eeurUVvTy"
+                    className="hover:underline">
                     Instagram
                   </a>
                 </li>
@@ -60,19 +65,30 @@ const Footer = () => {
                   <a
                     href="https://discord.gg/4eeurUVvTy"
                     className="hover:underline">
-                    Facebook
+                    LinkedIn
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-5 text-[16px] font-semibold text-[#9ED220]">
+              <h2 className="mb-5 text-[18px] font-semibold text-[#9ED220]">
                 Contact
               </h2>
-              <ul className="text-[#dbdbdb] space-y-2 text-[14px]">
-                <li>Email</li>
-                <li>Phone Number</li>
-                <li>Phone Number</li>
+              <ul className="text-[#dbdbdb] space-y-2 text-[16px]">
+                <li className="flex justify-centers gap-x-2 items-center">
+                  {' '}
+                  <MdLocalPhone color="9ED220" size={18} />
+                  03121955286
+                </li>
+                <li className="flex justify-centers gap-x-2 items-center">
+                  {' '}
+                  <IoIosMail color="9ED220" size={18} />
+                  khitameraat@gmail.com
+                </li>
+                <li className="flex justify-centers gap-x-2 items-center">
+                  <IoLocation color="9ED220" size={18} />
+                  Islamabad
+                </li>
               </ul>
             </div>
           </div>
@@ -86,8 +102,24 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 sm:justify-center sm:mt-0">
-            <a href="#" className="text-[#dbdbdb] hover:text-[#9ED220]">
+          <div className="flex mt-4 justify-center gap-x-[16px] items-center sm:mt-0">
+            <a href="#" className="text-[#9ED220]">
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a href="#" className="text-[#9ED220]">
               <svg
                 class="w-6 h-6"
                 aria-hidden="true"
@@ -104,12 +136,21 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="text-[#dbdbdb] hover:text-[#9ED220] ms-5">
+            <a href="#" className="text-[#9ED220]">
               <svg
+                class="w-6 h-6"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
                 fill="currentColor"
-                viewBox="0 0 448 512">
-                <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+                viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                  clip-rule="evenodd"
+                />
+                <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
               </svg>
             </a>
           </div>
