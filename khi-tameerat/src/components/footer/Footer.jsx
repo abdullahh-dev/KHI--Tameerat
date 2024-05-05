@@ -13,7 +13,7 @@ const Footer = () => {
               <img src={logo} className="h-24 me-3" alt="FlowBite Logo" />
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-y-8 sm:gap-8 lg:gap-24 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-y-8 sm:gap-8 lg:gap-24 sm:grid-cols-2 md:grid-cols-3">
             <div>
               <h2 className="mb-5 text-[18px] font-semibold text-[#9ED220]">
                 Links
@@ -87,7 +87,7 @@ const Footer = () => {
                 </li>
                 <li className="flex justify-centers gap-x-2 items-center">
                   <IoLocation color="9ED220" size={18} />
-                  Islamabad
+                  Block B, Satellite Town, Rawalpindi
                 </li>
               </ul>
             </div>

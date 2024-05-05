@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 function NavLinks() {
   const [menuBarV, setMenuBarV] = useState('hidden');
   const [dropDownV, setDropDownV] = useState('hidden');
@@ -49,15 +49,15 @@ function NavLinks() {
             id="navbar-dropdown">
             <ul className="flex flex-col text-[14px] font-medium text-white p-4 md:p-0 sm:shadow-sm shadow-[#9dd221]  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  href="/"
                   className="block py-2 px-3 text-white hover:text-[#9dd221] md:p-0">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/about"
                   className="block py-2 px-3 hover:text-[#9dd221] md:p-0">
                   About Us
                 </a>
@@ -126,11 +126,11 @@ function NavLinks() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   class="block py-2 px-3 rounded hover:text-[#9dd221] md:p-0">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
