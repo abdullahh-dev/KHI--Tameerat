@@ -15,13 +15,13 @@ function NavLinks() {
     <div>
       <nav className="bg-[#333333]  relative border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse">
             <span className="self-center text-2xl text-white uppercase font-semibold whitespace-nowrap">
               <span className="text-[#9dd221]">Khi</span> Tameraat
             </span>
-          </a>
+          </Link>
           <button
             onClick={setMenuBarVisibility}
             data-collapse-toggle="navbar-dropdown"
@@ -50,17 +50,25 @@ function NavLinks() {
             <ul className="flex flex-col text-[14px] font-medium text-white p-4 md:p-0 sm:shadow-sm shadow-[#9dd221]  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <NavLink
-                  href="/"
-                  className="block py-2 px-3 text-white hover:text-[#9dd221] md:p-0">
+                  to="/"
+                  className={({ isActive }) =>
+                    `block py-2 px-3 ${
+                      isActive ? 'text-[#9dd221]' : 'text-white'
+                    } text-white hover:text-[#9dd221] md:p-0`
+                  }>
                   Home
                 </NavLink>
               </li>
               <li>
-                <a
-                  href="/about"
-                  className="block py-2 px-3 hover:text-[#9dd221] md:p-0">
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    `block py-2 px-3 ${
+                      isActive ? 'text-[#9dd221]' : 'text-white'
+                    } text-white hover:text-[#9dd221] md:p-0`
+                  }>
                   About Us
-                </a>
+                </NavLink>
               </li>
               <li>
                 <button
@@ -96,7 +104,7 @@ function NavLinks() {
                           setDropDownVisibility('hidden');
                           setMenuBarV('hidden');
                         }}
-                        href="#"
+                        to="/construction"
                         className="block px-4 py-2 hover:text-[#9dd221]">
                         Construction
                       </button>
@@ -119,18 +127,18 @@ function NavLinks() {
                 </div>
               </li>
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/careers"
                   className="block py-2 px-3  hover:text-[#9dd221] md:p-0">
                   Careers
-                </a>
+                </NavLink>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  class="block py-2 px-3 rounded hover:text-[#9dd221] md:p-0">
+                <NavLink
+                  to="/contact"
+                  className="block py-2 px-3 rounded hover:text-[#9dd221] md:p-0">
                   Contact
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
