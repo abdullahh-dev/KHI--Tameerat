@@ -7,18 +7,18 @@ const Footer = () => {
   return (
     <footer className="bg-[#333333]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0 flex items-baseline">
+        <div className="lg:flex  md:justify-between">
+          <div className="mb-4">
             <a href="">
               <img src={logo} className="h-24 me-3" alt="FlowBite Logo" />
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-y-8 sm:gap-8 lg:gap-24 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid grid-cols-2 gap-y-5 sm:gap-8 lg:gap-24 sm:grid-cols-2 md:grid-cols-3">
             <div>
-              <h2 className="mb-5 text-[18px] font-semibold text-[#9ED220]">
+              <h2 className="mb-4 md:mb-6 text-[18px] font-semibold text-[#9ED220]">
                 Links
               </h2>
-              <ul className="text-[#dbdbdb] space-y-2 text-[16px]">
+              <ul className="text-[#dbdbdb] font-medium space-y-2 text-[16px]">
                 <li>
                   <a
                     href="https://tailwindcss.com/"
@@ -43,10 +43,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-5 text-[18px] font-semibold text-[#9ED220]">
+              <h2 className="mb-4 md:mb-6 text-[18px] font-semibold text-[#9ED220]">
                 Follow us
               </h2>
-              <ul className="text-[#dbdbdb] space-y-2 text-[16px]">
+              <ul className="text-[#dbdbdb] font-medium space-y-2 text-[16px]">
                 <li>
                   <a
                     href="https://github.com/themesberg/flowbite"
@@ -71,21 +71,21 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-5 text-[18px] font-semibold text-[#9ED220]">
+              <h2 className="mb-4 md:mb-6 text-[18px] font-semibold text-[#9ED220]">
                 Contact
               </h2>
-              <ul className="text-[#dbdbdb] space-y-2 text-[16px]">
-                <li className="flex justify-centers gap-x-2 items-center">
+              <ul className="text-[#dbdbdb] font-medium space-y-3 text-[16px]">
+                <li className="flex gap-x-3 items-center">
                   {' '}
                   <MdLocalPhone color="9ED220" size={18} />
                   03121955286
                 </li>
-                <li className="flex justify-centers gap-x-2 items-center">
+                <li className="flex justify-centers gap-x-3 items-center">
                   {' '}
                   <IoIosMail color="9ED220" size={18} />
                   khitameraat@gmail.com
                 </li>
-                <li className="flex justify-centers gap-x-2 items-center">
+                <li className="flex justify-centers gap-x-3 items-center">
                   <IoLocation color="9ED220" size={18} />
                   Block B, Satellite Town, Rawalpindi
                 </li>
@@ -102,10 +102,12 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 justify-center gap-x-[16px] items-center sm:mt-0">
-            <a href="#" className="text-[#9ED220]">
+          <div className="flex mt-4 justify-center gap-x-[12px] items-center sm:mt-0">
+            <a
+              href="#"
+              className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
               <svg
-                class="w-6 h-6"
+                className=" text-[#333333] hover:scale-[1.2] duration-500 transition-all w-6 h-6"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -119,9 +121,11 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="text-[#9ED220]">
+            <a
+              href="#"
+              className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
               <svg
-                class="w-6 h-6"
+                className=" text-[#333333] hover:scale-[1.2] duration-500 transition-all w-6 h-6"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -136,9 +140,11 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="text-[#9ED220]">
+            <a
+              href="#"
+              className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
               <svg
-                class="w-6 h-6"
+                className=" text-[#333333] hover:scale-[1.2] duration-500 transition-all w-6 h-6"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

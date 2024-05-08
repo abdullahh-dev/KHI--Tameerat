@@ -51,6 +51,7 @@ function NavLinks() {
               <li>
                 <NavLink
                   to="/"
+                  onClick={setMenuBarVisibility}
                   className={({ isActive }) =>
                     `block py-2 px-3 ${
                       isActive ? 'text-[#9dd221]' : 'text-white'
@@ -62,6 +63,7 @@ function NavLinks() {
               <li>
                 <NavLink
                   to="/about"
+                  onClick={setMenuBarVisibility}
                   className={({ isActive }) =>
                     `block py-2 px-3 ${
                       isActive ? 'text-[#9dd221]' : 'text-white'
@@ -129,6 +131,7 @@ function NavLinks() {
               <li>
                 <NavLink
                   to="/careers"
+                  onClick={setMenuBarVisibility}
                   className={({ isActive }) =>
                     `block py-2 px-3 ${
                       isActive ? 'text-[#9dd221]' : 'text-white'
@@ -140,6 +143,7 @@ function NavLinks() {
               <li>
                 <NavLink
                   to="/contact"
+                  onClick={setMenuBarVisibility}
                   className={({ isActive }) =>
                     `block py-2 px-3 ${
                       isActive ? 'text-[#9dd221]' : 'text-white'
