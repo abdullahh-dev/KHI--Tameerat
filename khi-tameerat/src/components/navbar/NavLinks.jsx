@@ -54,7 +54,7 @@ function NavLinks() {
                   className={({ isActive }) =>
                     `block py-2 px-3 ${
                       isActive ? 'text-[#9dd221]' : 'text-white'
-                    } text-white hover:text-[#9dd221] md:p-0`
+                    }  hover:text-[#9dd221] md:p-0`
                   }>
                   Home
                 </NavLink>
@@ -65,7 +65,7 @@ function NavLinks() {
                   className={({ isActive }) =>
                     `block py-2 px-3 ${
                       isActive ? 'text-[#9dd221]' : 'text-white'
-                    } text-white hover:text-[#9dd221] md:p-0`
+                    } hover:text-[#9dd221] md:p-0`
                   }>
                   About Us
                 </NavLink>
@@ -129,14 +129,22 @@ function NavLinks() {
               <li>
                 <NavLink
                   to="/careers"
-                  className="block py-2 px-3  hover:text-[#9dd221] md:p-0">
+                  className={({ isActive }) =>
+                    `block py-2 px-3 ${
+                      isActive ? 'text-[#9dd221]' : 'text-white'
+                    } hover:text-[#9dd221] md:p-0`
+                  }>
                   Careers
                 </NavLink>
               </li>
               <li>
                 <NavLink
                   to="/contact"
-                  className="block py-2 px-3 rounded hover:text-[#9dd221] md:p-0">
+                  className={({ isActive }) =>
+                    `block py-2 px-3 ${
+                      isActive ? 'text-[#9dd221]' : 'text-white'
+                    } hover:text-[#9dd221] md:p-0`
+                  }>
                   Contact
                 </NavLink>
               </li>
