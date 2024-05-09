@@ -69,7 +69,7 @@ function Navbar() {
                   <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
                 </svg>
               </a>
-              <button className="px-[14px] text-[14px] font-semibold  py-[8px] rounded-[4px] text-[#9dd221] bg-[#333333]">
+              <button className="px-[20px] text-[16px] font-medium  py-[8px] rounded-[4px] text-[#9dd221] bg-[#333333]">
                 Contact Us
               </button>
             </span>

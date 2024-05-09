@@ -20,16 +20,16 @@ function HomeHeroSec() {
             process, from concept to completion, we make your vision a reality.
           </p>
           <span className="flex flex-col w-full justify-center md:flex-row gap-2 md:space-x-4 mt-4 md:mt-12 font-semibold">
-            <button className="bg-[#9dd221] text-[14px] group px-[14px] text-black py-[6px] rounded-[4px]">
+            <button className="bg-[#9dd221] text-[16px] group px-[20px] text-[#333333] py-[8px] rounded-[4px]">
               Get in Touch
               <span>
-                <FaLongArrowAltRight className="inline ml-[2px] mb-[2px] group-hover:translate-x-[3px] transition-all duration-500" />
+                <FaLongArrowAltRight className="inline ml-[4px] mb-[2px] group-hover:translate-x-[3px] transition-all duration-500" />
               </span>
             </button>
-            <button className="bg-white/20 border text-[14px] px-[14px] py-[6px] group rounded-[4px]">
+            <button className="bg-white/20 border text-[16px] px-[20px] py-[8px] group rounded-[4px]">
               Learn More
               <span>
-                <FaLongArrowAltRight className="inline ml-[2px] group-hover:translate-x-[3px] transition-all duration-500" />
+                <FaLongArrowAltRight className="inline ml-[4px] group-hover:translate-x-[3px] transition-all duration-500" />
               </span>
             </button>
           </span>
