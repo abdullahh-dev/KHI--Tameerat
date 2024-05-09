@@ -13,9 +13,9 @@ function HServicesSec() {
       <h1 className="text-center mb-[90px] leading-tight mt-[32px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[535px]">
         Excellence in construction and other services
       </h1>
-      <div className="flex flex-col flex-wrap items-center gap-6 md:flex-row md:gap-[48px] md:justify-center ">
-        <div className="max-w-[340px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[2px]">
-          <div className="absolute bottom-[-20px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
+      <div className="flex flex-col items-center px-[20px] gap-y-8 lg:flex-row lg:gap-[40px] justify-center">
+        <div className="lg:max-w-[320px] w-[100%] md:max-w-[600px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[4px]">
+          <div className="absolute bottom-[-5px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
             <h1 className="text-[36px] font-semibold">Construction</h1>
             <span className="opacity-0 group-hover:opacity-100 transition-all duration-700 ">
               <hr className="border-[1px]" />
@@ -32,8 +32,8 @@ function HServicesSec() {
             />
           </div>
         </div>
-        <div className="max-w-[640px] lg:max-w-[340px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[2px]">
-          <div className="absolute bottom-[-20px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
+        <div className="lg:max-w-[320px] w-[100%] md:max-w-[600px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[4px]">
+          <div className="absolute bottom-[-5px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
             <h1 className="text-[36px] font-semibold">Estimation</h1>
             <span className="opacity-0 group-hover:opacity-100 transition-all duration-700 ">
               <hr className="border-[1px]" />
@@ -50,8 +50,8 @@ function HServicesSec() {
             />
           </div>
         </div>
-        <div className="max-w-[340px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[2px]">
-          <div className="absolute bottom-[-20px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
+        <div className="lg:max-w-[320px] w-[100%] md:max-w-[600px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[4px]">
+          <div className="absolute bottom-[-5px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
             <h1 className="text-[36px] font-semibold">Renovation</h1>
             <span className="opacity-0 group-hover:opacity-100 transition-all duration-700 ">
               <hr className="border-[1px]" />

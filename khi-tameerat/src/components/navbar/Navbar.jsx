@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div>
       <div className="bg-[#9dd221]">
-        <div className="max-w-[1440px] py-[10px] px-[10px] m-auto">
+        <div className="max-w-screen-xl py-[10px] px-[10px] m-auto">
           <div className="flex justify-between items-center">
             <h1 className="text-[#333333] font-semibold ">(+92)-312 1955286</h1>
             <span className="flex items-center gap-x-4 text-[#333333]">
