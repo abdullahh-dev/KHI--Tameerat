@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 function NavLinks() {
   const [menuBarV, setMenuBarV] = useState('hidden');
@@ -101,7 +101,7 @@ function NavLinks() {
                     className="py-2 text-sm text-white "
                     aria-labelledby="dropdownLargeButton">
                     <li>
-                      <button
+                      <NavLink
                         onClick={() => {
                           setDropDownVisibility('hidden');
                           setMenuBarV('hidden');
@@ -109,7 +109,7 @@ function NavLinks() {
                         to="/construction"
                         className="block px-4 py-2 hover:text-[#9dd221]">
                         Construction
-                      </button>
+                      </NavLink>
                     </li>
                     <li>
                       <a

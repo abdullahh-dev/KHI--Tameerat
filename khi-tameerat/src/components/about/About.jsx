@@ -7,7 +7,7 @@ function About() {
       <div class="relative  h-[400px] flex items-center justify-center">
         <img
           src={img}
-          alt="About Us Image"
+          alt="Construction Image"
           class="absolute duration-700 transition-all inset-0 w-full h-full object-cover"
         />
         <div class="bg-[#151c05e4] absolute inset-0"></div>
