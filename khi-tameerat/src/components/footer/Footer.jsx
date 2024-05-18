@@ -3,6 +3,7 @@ import logo from '../../assets/images/logo/KHI Green.png';
 import { IoIosMail } from 'react-icons/io';
 import { MdLocalPhone } from 'react-icons/md';
 import { IoLocation } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-[#333333]">
@@ -20,25 +21,19 @@ const Footer = () => {
               </h2>
               <ul className="text-[#dbdbdb] font-medium space-y-2 text-[16px]">
                 <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline">
+                  <Link to="/about" className="hover:underline">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline">
+                  <Link to="/careers" className="hover:underline">
                     Careers
-                  </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:underline">
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
