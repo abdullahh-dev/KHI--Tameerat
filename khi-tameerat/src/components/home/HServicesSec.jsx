@@ -2,6 +2,7 @@ import React from 'react';
 import constructionImg from '../../assets/images/services-media/construction.png';
 import estimationImg from '../../assets/images/services-media/estimation.png';
 import renovationImg from '../../assets/images/services-media/renovation.png';
+import { Link, Navigate, Router } from 'react-router-dom';
 function HServicesSec() {
   return (
     <div className="max-w-[1440px] m-auto mt-[110px]">
@@ -19,9 +20,11 @@ function HServicesSec() {
             <h1 className="text-[36px] font-semibold">Construction</h1>
             <span className="opacity-0 group-hover:opacity-100 transition-all duration-700 ">
               <hr className="border-[1px]" />
-              <button className=" border-[2px] p-2 mt-4 text-[12px]">
+              <Link
+                to="/construction"
+                className="inline-block border-[2px] p-2 mt-4 text-[12px]">
                 View Details
-              </button>
+              </Link>
             </span>
           </div>
           <div>

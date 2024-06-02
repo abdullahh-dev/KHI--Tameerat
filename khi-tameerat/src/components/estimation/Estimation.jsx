@@ -1,16 +1,12 @@
-import React, { useEffect } from 'react';
-import img from '../../assets/images//services-media/construction.png';
+import React from 'react';
+import img from '../../assets/images//services-media/estimation.png';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { BsBox } from 'react-icons/bs';
 
 function CustomTabPanel(props) {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   const { children, value, index, ...other } = props;
 
   return (
@@ -54,13 +50,13 @@ export default function BasicTabs() {
       <div class="relative  h-[400px] flex items-center justify-center">
         <img
           src={img}
-          alt="Construction Image"
+          alt="Extimation Image"
           class="absolute duration-700 transition-all inset-0 w-full h-full object-cover"
         />
         <div class="bg-[#000000d3] absolute inset-0"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center">
           <h1 class="text-white text-6xl uppercase font-bold text-center mb-4">
-            Construction
+            Estimation
           </h1>
           <p class="text-white text-lg text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from '../../assets/images/about-media/aboutus.jpg';
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div class="relative  h-[400px] flex items-center justify-center">

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from '../../assets/images/contact.jpg';
 import { IoIosMail } from 'react-icons/io';
 import { MdLocalPhone } from 'react-icons/md';
 import { IoLocation } from 'react-icons/io5';
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div class="relative  h-[400px] flex items-center justify-center">

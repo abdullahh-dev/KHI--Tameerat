@@ -7,7 +7,7 @@ import About from './components/about/About.jsx';
 import Contact from './components/contact/Contact.jsx';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Construction from './components/services/Construction.jsx';
-
+import Estimation from './components/estimation/Estimation.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/construction',
         element: <Construction />,
+      },
+      {
+        path: '/estimation',
+        element: <Estimation />,
       },
     ],
   },

@@ -112,18 +112,18 @@ function NavLinks() {
                       </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <NavLink
+                        to="/estimation"
                         className="block px-4 py-2 hover:text-[#9dd221]">
                         Estimation
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <NavLink
+                        to="/renovation"
                         className="block px-4 py-2 hover:text-[#9dd221]">
                         Renovation
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </div>

@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="lg:flex  md:justify-between">
           <div className="mb-4">
-            <a href="">
+            <Link to="/">
               <img src={logo} className="h-24 me-3" alt="FlowBite Logo" />
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-y-5 sm:gap-8 lg:gap-24 sm:grid-cols-2 md:grid-cols-3">
             <div>
@@ -92,14 +92,14 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-[#dbdbdb] sm:text-center">
             © 2024{' '}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <Link to="/" className="hover:underline">
               KHI Tameraat™
-            </a>
+            </Link>
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 justify-center gap-x-[12px] items-center sm:mt-0">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
               <svg
                 className=" text-[#333333] hover:scale-[1.2] duration-500 transition-all w-6 h-6"
@@ -115,7 +115,7 @@ const Footer = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
             <a
               href="#"
               className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
