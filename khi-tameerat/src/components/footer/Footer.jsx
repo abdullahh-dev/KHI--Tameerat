@@ -51,14 +51,14 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="https://www.instagram.com/khitameraat/?utm_source=ig_web_button_share_sheet"
                     className="hover:underline">
                     Instagram
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="https://www.linkedin.com/company/khitameraat/"
                     className="hover:underline">
                     LinkedIn
                   </a>
@@ -117,7 +117,7 @@ const Footer = () => {
               </svg>
             </Link>
             <a
-              href="#"
+              href="https://www.instagram.com/khitameraat/?utm_source=ig_web_button_share_sheet"
               className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
               <svg
                 className=" text-[#333333] hover:scale-[1.2] duration-500 transition-all w-6 h-6"
@@ -136,7 +136,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/khitameraat/"
               className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
               <svg
                 className=" text-[#333333] hover:scale-[1.2] duration-500 transition-all w-6 h-6"

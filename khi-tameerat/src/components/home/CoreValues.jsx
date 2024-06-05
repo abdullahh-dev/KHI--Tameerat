@@ -10,7 +10,7 @@ function CoreValues() {
   return (
     <div className="mt-[110px]">
       <span className="flex justify-center">
-        <h1 className="px-[28px]  py-[8px] bg-[#333333] rounded-full uppercase text-[18px] font-semibold tracking-[5px] text-[#9ED220]">
+        <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[5px] text-[#9ED220]">
           Why Choose Us?
         </h1>
       </span>

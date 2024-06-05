@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import img from '../../assets/images/about-media/aboutus.jpg';
+import TeamSection from './team/TeamSection';
 
 function About() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
-    <div>
+    <div className="bg-gray-50">
       <div class="relative  h-[400px] flex items-center justify-center">
         <img
           src={img}
@@ -26,9 +27,12 @@ function About() {
       </div>
       <div className="max-w-[1440px] px-[10px] mx-auto">
         <div class="text-center md:px-8">
-          <h2 class="text-4xl font-bold mb-6 uppercase text-[#9ED220] mt-[40px] md:mt-[110px]">
-            Who are we?
-          </h2>
+          <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[5px] mt-[40px] md:mt-[110px] text-[#9ED220]">
+            Our Services
+          </h1>
+          <h1 className="text-center mb-[36px] leading-tight mt-[4px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[600px]">
+            Experts in construction and innovative solutions.
+          </h1>
           <p class="text-[22px] leading-relaxed">
             At
             <span className="text-[#9ED220] font-semibold"> KHI Tameraat</span>,
@@ -44,9 +48,13 @@ function About() {
             Tameraat, you can trust that your construction needs are in capable
             hands.
           </p>
-          <h2 class="text-4xl font-bold mb-6 uppercase text-[#9ED220] mt-[24px] md:mt-[60px]">
-            Meet our team
-          </h2>
+          <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[5px] mt-[40px] lg:mt-[80px] text-[#9ED220]">
+            Our Team
+          </h1>
+          <h1 className="text-center leading-tight mt-[4px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[600px]">
+            Skilled professionals driving excellence.
+          </h1>
+          <TeamSection />
         </div>
       </div>
     </div>
