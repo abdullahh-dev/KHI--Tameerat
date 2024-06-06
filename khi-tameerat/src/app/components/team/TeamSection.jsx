@@ -55,7 +55,9 @@ function TeamSection() {
                   height="667"
                 />
                 <div className="group-hover:translate-x-4 duration-700">
-                  <h4 className="text-2xl">{t.name}</h4>
+                  <h4 className="text-xl font-medium text-gray-600">
+                    {t.name}
+                  </h4>
                   <span className="block text-md font-medium text-[#a1a1a1]">
                     {t.title}
                   </span>

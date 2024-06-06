@@ -69,7 +69,7 @@ function NavLinks() {
                       isActive ? 'text-[#9dd221]' : 'text-white'
                     } hover:text-[#9dd221] md:p-0`
                   }>
-                  About Us
+                  About
                 </NavLink>
               </li>
               <li>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import img from '../../assets/images/about-media/aboutus.jpg';
-import TeamSection from './team/TeamSection';
+import TeamSection from '../components/team/TeamSection';
 
 function About() {
   useEffect(() => {
@@ -32,7 +32,7 @@ function About() {
           <h1 className="text-center mb-[36px] leading-tight mt-[4px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[600px]">
             Experts in construction and innovative solutions.
           </h1>
-          <p class="text-[22px] leading-relaxed">
+          <p class="md:text-[22px] text-[16px] text-gray-500 leading-relaxed">
             At
             <span className="text-[#9ED220] font-semibold"> KHI Tameraat</span>,
             we pride ourselves on being one of the leading engineering firm,

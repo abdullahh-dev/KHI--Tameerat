@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
-import img from '../../assets/images//services-media/construction.png';
+import bgImg from '../../../assets/images/bg-images/constructionPageBackground.jpg';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { BsBox } from 'react-icons/bs';
-import ImageSlider from '../_lib/ImageSlider';
-import img1P1 from '../../assets/images/construction-images/constructionHouse1.png';
-import img2P1 from '../../assets/images/construction-images/constructionhouse2.png';
-import img1P2 from '../../assets/images/construction-images/constructionoffice1.png';
-import img2P2 from '../../assets/images/construction-images/constructionoffice2.png';
-import img3P2 from '../../assets/images/construction-images/constructionoffice3.jpeg';
-import img1P3 from '../../assets/images/construction-images/Reconstruction.jpeg';
-import img2P3 from '../../assets/images/construction-images/reconstruction2.jpeg';
+import ImageSlider from '../../_lib/ImageSlider';
+import img1P1 from '../../../assets/images/construction-images/constructionHouse1.png';
+import img2P1 from '../../../assets/images/construction-images/constructionhouse2.png';
+import img1P2 from '../../../assets/images/construction-images/constructionoffice1.png';
+import img2P2 from '../../../assets/images/construction-images/constructionoffice2.png';
+import img3P2 from '../../../assets/images/construction-images/constructionoffice3.jpeg';
+import img1P3 from '../../../assets/images/construction-images/Reconstruction.jpeg';
+import img2P3 from '../../../assets/images/construction-images/reconstruction2.jpeg';
 function CustomTabPanel(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -78,9 +78,9 @@ export default function BasicTabs() {
     <div className="bg-gray-50">
       <div class="relative h-[500px] group overflow-hidden  flex items-center justify-center">
         <img
-          src={img}
+          src={bgImg}
           alt="Construction Image"
-          class="absolute duration-700 transition-all inset-0 w-full h-full group-hover:scale-110"
+          class="absolute duration-700 transition-all object-cover translate-y-[-4px] group-hover:translate-y-[30px] animate-scale-bounce  inset-0 w-full h-full"
         />
         <div class="bg-[#000000d3] absolute inset-0"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center">
@@ -89,11 +89,11 @@ export default function BasicTabs() {
           </h1>
           <p class="text-white text-[20px] font-medium text-center">
             Exploring groundbreaking projects, innovations, and advancements in
-            the construction industry."
+            the construction industry.
           </p>
         </div>
       </div>
-      <div className="max-w-screen-xl px-[10px] sm:px-[20px] mt-[40px] md:mt-[70px] mb-64 mx-auto">
+      <div className="max-w-screen-xl px-[4px] sm:px-[20px] mt-[40px] md:mt-[70px] mb-64">
         <Box sx={{ width: '100%' }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs

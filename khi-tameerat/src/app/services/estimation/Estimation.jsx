@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../assets/images//services-media/estimation.png';
+import img from '../../../assets/images/services-media/estimation.png';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
