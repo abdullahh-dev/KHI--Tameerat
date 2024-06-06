@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
-import Home from './components/home/Home.jsx';
-import About from './components/about/About.jsx';
-import Contact from './components/contact/Contact.jsx';
+import Home from './app/home/Home.jsx';
+import About from './app/about/About.jsx';
+import Contact from './app/contact/Contact.jsx';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Construction from './components/services/Construction.jsx';
-import Estimation from './components/estimation/Estimation.jsx';
+import Construction from './app/services/Construction.jsx';
+import Estimation from './app/estimation/Estimation.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
