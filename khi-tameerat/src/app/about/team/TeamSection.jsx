@@ -20,7 +20,7 @@ function TeamSection() {
     {
       name: 'Engr. Haseeb Ali Khan',
       src: haseeb,
-      title: 'Co Founder',
+      title: 'Co Founder / Operational Manager',
     },
     {
       name: 'Engr. Muhammad Junaid',
@@ -30,7 +30,7 @@ function TeamSection() {
     {
       name: 'Engr. Muhammad Nadeem',
       src: nadeem,
-      title: 'Director maintenance',
+      title: 'Director Maintenance',
     },
     {
       name: 'Engr. Mahira Zulifqar',
@@ -56,7 +56,9 @@ function TeamSection() {
                 />
                 <div className="group-hover:translate-x-4 duration-700">
                   <h4 className="text-2xl">{t.name}</h4>
-                  <span className="block text-sm text-gray-500">{t.title}</span>
+                  <span className="block text-md font-medium text-[#a1a1a1]">
+                    {t.title}
+                  </span>
                 </div>
               </div>
             ))}

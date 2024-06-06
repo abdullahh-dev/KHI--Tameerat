@@ -3,6 +3,7 @@ import 'react-slideshow-image/dist/styles.css';
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import { data } from 'autoprefixer';
 
 const divStyle = {
   display: 'flex',
@@ -11,39 +12,29 @@ const divStyle = {
   backgroundSize: 'cover',
   height: '300px',
 };
-const slideImages = [
-  {
-    url: 'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
-    caption: 'Slide 1',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
-    caption: 'Slide 2',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
-    caption: 'Slide 3',
-  },
-];
 
-const Slideshow = () => {
+const Slideshow = ({ data }) => {
   return (
-    <div>
-      <div className="slide-container mb-2 md:w-[400px] rounded-lg overflow-hidden h-full">
+    <div className="h-full mx-auto md:mx-0 w-[380px] rounded-lg overflow-hidden w shadow-md duration-700 hover:shadow-2xl bg-white">
+      <div className="slide-container mb-2 md:w-[380px] rounded-lg h-[300px]">
         <Slide>
-          {slideImages.map((slideImage, index) => (
+          {data.images.map((m, index) => (
             <div key={index}>
               <div
+                className="object-cover"
                 style={{
                   ...divStyle,
-                  backgroundImage: `url(${slideImage.url})`,
+                  backgroundImage: `url(${m})`,
                 }}></div>
             </div>
           ))}
         </Slide>
       </div>
-      <div>
-        <h1>hi</h1>
+      <div className="px-4 mb-2  py-3">
+        <h1 className="font-semibold leading-5 mb-2  text-[20px]">
+          {data.title}
+        </h1>
+        <p className="text-[14px] text-gray-500">{data.description}</p>
       </div>
     </div>
   );

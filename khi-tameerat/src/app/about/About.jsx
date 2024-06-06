@@ -3,9 +3,9 @@ import img from '../../assets/images/about-media/aboutus.jpg';
 import TeamSection from './team/TeamSection';
 
 function About() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-gray-50">
       <div class="relative  h-[400px] flex items-center justify-center">
@@ -19,16 +19,15 @@ function About() {
           <h1 class="text-white text-6xl uppercase font-bold text-center mb-4">
             <span className="text-[#9ED220]">About</span> Us
           </h1>
-          <p class="text-white text-lg text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            velit.
+          <p class="text-white text-xl text-center">
+            Leading innovation in construction for a brighter future.
           </p>
         </div>
       </div>
       <div className="max-w-[1440px] px-[10px] mx-auto">
         <div class="text-center md:px-8">
-          <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[5px] mt-[40px] md:mt-[110px] text-[#9ED220]">
-            Our Services
+          <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[2px] mt-[40px] md:mt-[110px] text-[#9ED220]">
+            About Us
           </h1>
           <h1 className="text-center mb-[36px] leading-tight mt-[4px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[600px]">
             Experts in construction and innovative solutions.
@@ -48,7 +47,7 @@ function About() {
             Tameraat, you can trust that your construction needs are in capable
             hands.
           </p>
-          <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[5px] mt-[40px] lg:mt-[80px] text-[#9ED220]">
+          <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[2px] mt-[40px] lg:mt-[80px] text-[#9ED220]">
             Our Team
           </h1>
           <h1 className="text-center leading-tight mt-[4px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[600px]">
