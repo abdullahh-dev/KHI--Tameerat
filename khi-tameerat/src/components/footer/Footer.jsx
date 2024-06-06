@@ -44,7 +44,7 @@ const Footer = () => {
               <ul className="text-[#dbdbdb] font-medium space-y-2 text-[16px]">
                 <li>
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="https://www.facebook.com/profile.php?id=61560569131512"
                     className="hover:underline antialiased ">
                     Facebook
                   </a>
@@ -98,8 +98,8 @@ const Footer = () => {
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 justify-center gap-x-[12px] items-center sm:mt-0">
-            <Link
-              to="/"
+            <a
+              href="https://www.facebook.com/profile.php?id=61560569131512"
               className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
               <svg
                 className=" text-[#333333] hover:scale-[1.2] duration-500 transition-all w-6 h-6"
@@ -115,7 +115,7 @@ const Footer = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-            </Link>
+            </a>
             <a
               href="https://www.instagram.com/khitameraat/?utm_source=ig_web_button_share_sheet"
               className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">

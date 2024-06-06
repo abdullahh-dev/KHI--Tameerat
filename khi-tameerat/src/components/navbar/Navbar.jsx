@@ -14,7 +14,8 @@ function Navbar() {
             <h1 className="text-[#333333] font-semibold ">(+92)-312 1955286</h1>
             <span className="flex items-center gap-x-4 text-[#333333]">
               <a
-                href="#"
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61560569131512"
                 className="bg-[#333333] flex w-8 h-8 rounded-[5px] items-center justify-center">
                 <svg
                   class="text-[#9dd221] hover:scale-[1.2] duration-500 transition-all w-6 h-6"

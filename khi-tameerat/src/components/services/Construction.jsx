@@ -6,7 +6,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { BsBox } from 'react-icons/bs';
-
+import ImageSlider from '../_lib/ImageSlider';
 function CustomTabPanel(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -50,8 +50,8 @@ export default function BasicTabs() {
   };
 
   return (
-    <div>
-      <div class="relative  h-[400px] flex items-center justify-center">
+    <div className="bg-gray-50">
+      <div class="relative h-[400px] flex items-center justify-center">
         <img
           src={img}
           alt="Construction Image"
@@ -68,7 +68,7 @@ export default function BasicTabs() {
           </p>
         </div>
       </div>
-      <div className="max-w-screen-xl mt-[40px] md:mt-[70px] mx-auto">
+      <div className="max-w-screen-xl mt-[40px] md:mt-[70px] mb-64 mx-auto">
         <Box sx={{ width: '100%' }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs
@@ -105,53 +105,14 @@ export default function BasicTabs() {
             atque ad ipsam libero, similique est! Saepe, repellendus velit
             nostrum quo voluptates iusto distinctio recusandae reiciendis dolore
             deleniti eligendi at, sapiente ullam! Atque ipsam porro repudiandae?
-            Atque dignissimos magni minus possimus rem perspiciatis, modi
-            voluptate ex, dolore labore praesentium placeat. A, provident ut
-            molestias, quod, ex eos officia dignissimos autem ipsam suscipit
-            porro quas sint earum soluta beatae quisquam. Nobis, laborum. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Quos error nulla
-            ullam, commodi illum amet odio omnis veniam temporibus tenetur
-            quibusdam. Laboriosam, quam. Aspernatur quidem, tempora corrupti
-            maiores rerum amet minima dolore numquam omnis ea itaque assumenda
-            repellendus soluta fugit, rem totam tempore reprehenderit obcaecati
-            in asperiores nostrum ad consectetur molestiae. Nihil laudantium
-            deleniti expedita. Quam pariatur assumenda eveniet voluptates nisi
-            debitis adipisci quod rerum qui ab. Laborum qui libero sunt suscipit
-            corrupti, debitis aliquid laboriosam, soluta deserunt impedit, optio
-            fugit quam id. Saepe alias, recusandae iste, sit sed fugit
-            voluptates iusto, molestias nostrum dolores voluptas facere amet
-            quae non ipsam quis sint. Id, consequuntur ipsam perferendis
-            provident reiciendis atque nesciunt quidem fugit quod, natus
-            mollitia! Perspiciatis nulla corrupti nam!
+            Atque dignissimos magni minus possimus rem
           </CustomTabPanel>
           <CustomTabPanel value={value} index={1}>
-            Projects Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Laudantium ducimus tenetur ad rerum quam et deserunt alias, cum
-            accusantium ipsum inventore, voluptate aliquid cupiditate eaque id
-            suscipit numquam aliquam quia quod ullam assumenda! Quasi rerum sit
-            accusamus ab quidem! Quis vel voluptatem laboriosam ullam tempore!
-            Ratione blanditiis consectetur eveniet in, minima eligendi
-            laudantium error praesentium, itaque, amet placeat facilis
-            doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit, odio? Omnis, sit officia voluptas dolore libero
-            similique repudiandae rerum, autem corrupti illo fuga. Autem
-            corporis nam porro libero vitae quae rem nesciunt unde sit eum
-            doloribus numquam quia, corrupti laudantium a dolor ad nisi illum
-            suscipit vero rerum nulla! Provident reiciendis veritatis eius,
-            itaque animi alias expedita doloremque saepe accusamus
-            necessitatibus ipsum explicabo ipsa ad, dolorum exercitationem ea,
-            inventore incidunt! Possimus expedita deleniti, quod veniam mollitia
-            est vero, et ad minus architecto unde vel culpa! Nisi soluta
-            possimus, distinctio placeat voluptatum incidunt corrupti minima
-            explicabo accusantium architecto deleniti aut iure. Lorem ipsum,
-            dolor sit amet consectetur adipisicing elit. Iste eum nostrum
-            maiores modi voluptatem nihil, earum distinctio, esse excepturi
-            eveniet debitis. Sapiente laboriosam cum ratione nam at optio omnis
-            repudiandae repellendus ipsa maxime molestias et rerum, consequatur
-            quasi consectetur? Necessitatibus quisquam nulla exercitationem
-            fugit in hic corporis quis quod soluta et repudiandae quibusdam
-            numquam consequuntur, eum veniam delectus a nemo! Facere excepturi
-            iure molestias tempore aliquam itaque quo voluptates consequatur?
+            <div className="grid grid-cols-1 gap-12 items-center md:grid-cols-2 lg:grid-cols-3  mt-8">
+              <ImageSlider />
+              <ImageSlider />
+              <ImageSlider />
+            </div>
           </CustomTabPanel>
         </Box>
       </div>
