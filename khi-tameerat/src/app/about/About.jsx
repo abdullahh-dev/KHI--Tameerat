@@ -1,6 +1,13 @@
 import React, { useEffect } from 'react';
-import img from '../../assets/images/about-media/aboutus.jpg';
+import bgImg from '../../assets/images/about-media/aboutus.jpg';
 import TeamSection from '../components/team/TeamSection';
+import BGSection from '../components/BgSection.jsx';
+
+const aboutData = {
+  img: bgImg,
+  title: 'About Us',
+  desc: 'Leading innovation in construction for a brighter future.',
+};
 
 function About() {
   useEffect(() => {
@@ -8,22 +15,7 @@ function About() {
   }, []);
   return (
     <div className="bg-gray-50">
-      <div class="relative  h-[400px] flex items-center justify-center">
-        <img
-          src={img}
-          alt="Construction Image"
-          class="absolute duration-700 transition-all inset-0 w-full h-full object-cover"
-        />
-        <div class="bg-[#151c05e4] absolute inset-0"></div>
-        <div class="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 class="text-white text-6xl uppercase font-bold text-center mb-4">
-            <span className="text-[#9ED220]">About</span> Us
-          </h1>
-          <p class="text-white text-xl text-center">
-            Leading innovation in construction for a brighter future.
-          </p>
-        </div>
-      </div>
+      <BGSection data={aboutData} />
       <div className="max-w-[1440px] px-[10px] mx-auto">
         <div class="text-center md:px-8">
           <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[2px] mt-[40px] md:mt-[110px] text-[#9ED220]">
@@ -34,7 +26,7 @@ function About() {
           </h1>
           <p class="md:text-[22px] text-[16px] text-gray-500 leading-relaxed">
             At
-            <span className="text-[#9ED220] font-semibold"> KHI Tameraat</span>,
+            <span className="text-[#9ED220] font-semibold">KHI Tameraat</span>,
             we pride ourselves on being one of the leading engineering firm,
             specializing in construction, renovation, and estimation services.
             With a strong track record in erecting and renovating various

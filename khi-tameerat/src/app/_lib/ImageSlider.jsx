@@ -15,8 +15,8 @@ const divStyle = {
 
 const Slideshow = ({ data }) => {
   return (
-    <div className="h-full mx-auto md:mx-0 w-[380px] rounded-lg overflow-hidden w shadow-md duration-700 hover:shadow-2xl bg-white">
-      <div className="slide-container mb-2 md:w-[380px] rounded-lg h-[300px]">
+    <div className="h-full mx-auto w-[340px] md:w-[400px] rounded-lg overflow-hidden shadow-md duration-700 hover:shadow-2xl bg-white">
+      <div className="slide-container mb-2 w-[340px] md:w-[400px] rounded-lg h-[300px]">
         <Slide>
           {data.images.map((m, index) => (
             <div key={index}>
@@ -31,7 +31,7 @@ const Slideshow = ({ data }) => {
         </Slide>
       </div>
       <div className="px-4 mb-2  py-3">
-        <h1 className="font-semibold leading-5 mb-2  text-[20px]">
+        <h1 className="font-semibold leading-2 mb-2  text-[20px]">
           {data.title}
         </h1>
         <p className="text-[14px] text-gray-500">{data.description}</p>

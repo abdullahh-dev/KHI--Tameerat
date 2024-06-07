@@ -1,32 +1,22 @@
 import React, { useEffect } from 'react';
-import img from '../../assets/images/contact.jpg';
+import bgImg from '../../assets/images/contact.jpg';
 import { IoIosMail } from 'react-icons/io';
 import { MdLocalPhone } from 'react-icons/md';
 import { IoLocation } from 'react-icons/io5';
+import BGSection from '../components/BgSection';
+
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const aboutUsData = {
+    img: bgImg,
+    title: 'Contact Us',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, pariatur.',
+  };
   return (
-    <div>
-      <div class="relative  h-[400px] flex items-center justify-center">
-        <img
-          src={img}
-          alt="About Us Image"
-          class="absolute duration-700 transition-all inset-0 w-full h-full object-cover"
-        />
-        <div class="bg-[#151c05e4] absolute inset-0"></div>
-        <div class="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 class="text-white text-6xl uppercase font-bold text-center mb-4">
-            <span className="text-[#9ED220]">Contact</span> Us
-          </h1>
-          <p class="text-white text-lg text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-
+    <div className="bg-gray-50">
+      <BGSection data={aboutUsData} />
       {/* Contact Form Container */}
       <div className="md-max:flex md:flex-row gap-2 md:gap-24 max-w-[1440px] flex flex-col gap-y-8 px-[10px] lg:px-20 justify-between mx-auto mt-[40px] md:mt-[170px]">
         <div>

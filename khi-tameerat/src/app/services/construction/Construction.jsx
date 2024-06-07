@@ -14,6 +14,7 @@ import img2P2 from '../../../assets/images/construction-images/constructionoffic
 import img3P2 from '../../../assets/images/construction-images/constructionoffice3.jpeg';
 import img1P3 from '../../../assets/images/construction-images/Reconstruction.jpeg';
 import img2P3 from '../../../assets/images/construction-images/reconstruction2.jpeg';
+import BGSection from '../../components/BgSection.jsx';
 function CustomTabPanel(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -74,26 +75,16 @@ export default function BasicTabs() {
     setValue(newValue);
   };
 
+  const constructionData = {
+    img: bgImg,
+    title: 'Construction',
+    desc: 'Exploring groundbreaking projects, innovations, and advancements in the construction industry.',
+  };
+
   return (
     <div className="bg-gray-50">
-      <div class="relative h-[500px] group overflow-hidden  flex items-center justify-center">
-        <img
-          src={bgImg}
-          alt="Construction Image"
-          class="absolute duration-700 transition-all object-cover translate-y-[-4px] group-hover:translate-y-[30px] animate-scale-bounce  inset-0 w-full h-full"
-        />
-        <div class="bg-[#000000d3] absolute inset-0"></div>
-        <div class="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 class="text-white text-6xl uppercase font-bold text-center mb-4">
-            Construction
-          </h1>
-          <p class="text-white text-[20px] font-medium text-center">
-            Exploring groundbreaking projects, innovations, and advancements in
-            the construction industry.
-          </p>
-        </div>
-      </div>
-      <div className="max-w-screen-xl px-[4px] sm:px-[20px] mt-[40px] md:mt-[70px] mb-64">
+      <BGSection data={constructionData} />
+      <div className="max-w-screen-xl px-[4px] mx-auto mt-[40px] md:mt-[70px] mb-64">
         <Box sx={{ width: '100%' }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs
@@ -107,33 +98,10 @@ export default function BasicTabs() {
             </Tabs>
           </Box>
           {/* <CustomTabPanel value={value} index={0}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
-            fugiat exercitationem in inventore, ducimus tempore nam dolor totam
-            cum impedit reiciendis aspernatur animi, explicabo commodi a dicta.
-            Fugiat sequi voluptatibus magnam? Necessitatibus doloribus, facere
-            fugiat minus architecto officiis, at ad error voluptates, odit
-            dolores placeat! Sapiente omnis quas commodi sunt illum inventore
-            tempora minima facilis blanditiis iste dicta eligendi voluptatibus
-            voluptatum temporibus iure dolorum nulla, vel doloremque tempore.
-            Magni neque quibusdam excepturi eveniet harum in, ipsam
-            exercitationem, itaque commodi accusantium officia voluptate id!
-            Quia quos enim molestiae reiciendis deleniti mollitia, pariatur
-            optio maxime labore, eos magni. Cum dicta, non adipisci magnam
-            doloribus deserunt nisi officia qui sit. Distinctio molestiae
-            deserunt, necessitatibus voluptate omnis nihil, nulla autem in,
-            aliquid ipsum cumque officia laboriosam odio saepe quod nesciunt
-            iusto quo temporibus? Temporibus molestias blanditiis culpa
-            voluptatum repellendus aperiam ut animi laborum, sed deleniti
-            possimus non quasi commodi veritatis! Obcaecati earum quod iste!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error rem
-            dicta, provident esse asperiores cumque explicabo itaque nesciunt a
-            atque ad ipsam libero, similique est! Saepe, repellendus velit
-            nostrum quo voluptates iusto distinctio recusandae reiciendis dolore
-            deleniti eligendi at, sapiente ullam! Atque ipsam porro repudiandae?
-            Atque dignissimos magni minus possimus rem
+          
           </CustomTabPanel> */}
           <CustomTabPanel value={value} index={0}>
-            <h1 className=" uppercase text-[18px] font-bold text-center tracking-[2px] mt-12 mb-12 text-[#9ED220]">
+            <h1 className="uppercase text-[18px] mx-auto font-bold text-center tracking-[2px] mt-12 mb-12 text-[#9ED220]">
               Our Construction Projects
             </h1>
             <div className="grid grid-cols-1 gap-12 items-center md:grid-cols-2 lg:grid-cols-3  mt-8">

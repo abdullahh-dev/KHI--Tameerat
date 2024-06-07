@@ -35,7 +35,7 @@ function HServicesSec() {
       <div className="flex flex-col items-center px-[20px] gap-y-8 lg:flex-row lg:gap-[40px] justify-center">
         {servicesData.map((s) => (
           <div className="lg:max-w-[320px] w-[100%] md:max-w-[600px] overflow-hidden group relative h-[410px] cursor-pointer rounded-[4px]">
-            <div className="absolute bottom-[-5px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
+            <div className="absolute bottom-[-2px] group-hover:bottom-36 z-[99999] transition-all duration-1000 left-16 text-white">
               <h1 className="text-[24px] leading-tight font-semibold">
                 {s.title}
               </h1>
