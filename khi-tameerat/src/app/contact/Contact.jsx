@@ -18,7 +18,7 @@ const Contact = () => {
     <div className="bg-gray-50">
       <BGSection data={aboutUsData} />
       {/* Contact Form Container */}
-      <div className="md-max:flex md:flex-row gap-2 md:gap-24 max-w-[1440px] flex flex-col gap-y-8 px-[10px] lg:px-20 justify-between mx-auto mt-[40px] md:mt-[170px]">
+      <div className="md-max:flex md:flex-row justify-between max-w-[1440px] flex flex-col gap-y-8 px-[10px] lg:px-20 mx-auto mt-[40px] md:mt-[170px]">
         <div>
           <p className="text-[#9ED220] font-bold text-[18px]">Contact Us</p>
           <h1 className="pt-2 text-[36px] leading-tight md:text-[48px] font-bold max-w-[900px] text-[#333333]">
@@ -34,12 +34,12 @@ const Contact = () => {
             <li className="flex gap-x-2 text-[#333333] items-center">
               {' '}
               <MdLocalPhone color="9ED220" size={28} />
-              03121955286
+              (+92)-312 1955286
             </li>
             <li className="flex gap-x-2 text-[#333333] items-center">
               {' '}
               <IoIosMail color="9ED220" size={28} />
-              khitameraat@gmail.com
+              info@khitameraat.com
             </li>
             <li className="flex gap-x-2 text-[#333333] items-center">
               <IoLocation color="9ED220" size={28} />

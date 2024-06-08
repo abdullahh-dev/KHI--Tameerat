@@ -14,6 +14,10 @@ function CoreValues() {
           Why Choose Us?
         </h1>
       </span>
+
+      <h1 className="text-center mb-[90px] leading-tight mt-[32px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[635px]">
+        Choose us for top-quality work, on time and on budget
+      </h1>
       <div className="mt-[90px] bg-[#333333] w-full py-24">
         <div className="max-w-[1440px] flex justify-center items-center w-full h-full  mx-auto">
           <div className="flex justify-center gap-x-2 md:gap-x-12 gap-y-12 flex-wrap">

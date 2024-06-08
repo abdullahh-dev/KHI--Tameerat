@@ -8,18 +8,18 @@ const Footer = () => {
   return (
     <footer className="bg-[#333333]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="lg:flex  md:justify-between">
-          <div className="mb-4">
+        <div>
+          <div className="mb-6">
             <Link to="/">
               <img src={logo} className="h-24 me-3" alt="FlowBite Logo" />
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-y-5 sm:gap-8 lg:gap-24 sm:grid-cols-2 md:grid-cols-3">
             <div>
-              <h2 className="mb-4 md:mb-6 text-[18px] font-semibold text-[#9ED220]">
+              <h2 className="mb-4 md:mb-6 text-[16px] font-semibold text-[#9ED220]">
                 Links
               </h2>
-              <ul className="text-[#dbdbdb] font-medium space-y-2 text-[16px]">
+              <ul className="text-[#dbdbdb] font-medium space-y-2 text-[14px]">
                 <li>
                   <Link to="/about" className="hover:underline">
                     About
@@ -38,10 +38,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-4 md:mb-6 text-[18px] font-semibold text-[#9ED220]">
+              <h2 className="mb-4 md:mb-6 text-[16px] font-semibold text-[#9ED220]">
                 Follow us
               </h2>
-              <ul className="text-[#dbdbdb] font-medium space-y-2 text-[16px]">
+              <ul className="text-[#dbdbdb] font-medium space-y-2 text-[14px]">
                 <li>
                   <a
                     href="https://www.facebook.com/profile.php?id=61560569131512"
@@ -66,19 +66,19 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-4 md:mb-6 text-[18px] font-semibold text-[#9ED220]">
+              <h2 className="mb-4 md:mb-6 text-[16px] font-semibold text-[#9ED220]">
                 Contact
               </h2>
-              <ul className="text-[#dbdbdb] font-medium space-y-3 text-[16px]">
+              <ul className="text-[#dbdbdb] font-medium space-y-3 text-[14px]">
                 <li className="flex gap-x-3 items-center">
                   {' '}
                   <MdLocalPhone color="9ED220" size={18} />
-                  03121955286
+                  (+92)-312 1955286
                 </li>
                 <li className="flex justify-centers gap-x-3 items-center">
                   {' '}
                   <IoIosMail color="9ED220" size={18} />
-                  khitameraat@gmail.com
+                  info@khitameraat.com
                 </li>
                 <li className="flex justify-centers gap-x-3 items-center">
                   <IoLocation color="9ED220" size={18} />
