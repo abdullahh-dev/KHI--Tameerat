@@ -8,17 +8,17 @@ import { TbBulbFilled } from 'react-icons/tb';
 import { FaUserGear } from 'react-icons/fa6';
 function CoreValues() {
   return (
-    <div className="mt-[110px]">
+    <div className="md:mt-[110px] mt-[55px]">
       <span className="flex justify-center">
-        <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[2px] text-[#9ED220]">
+        <h1 className="uppercase text-[18px] font-bold tracking-[2px] text-[#9ED220]">
           Why Choose Us?
         </h1>
       </span>
 
-      <h1 className="text-center mb-[90px] leading-tight mt-[32px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[635px]">
+      <h1 className="text-center md:mb-[90px] mb-[45px] px-[10px] leading-tight mt-[12px] md:mt-[32px] font-extrabold text-[24px] md:text-[40px] text-[#333333] mx-auto max-w-[535px]">
         Choose us for top-quality work, on time and on budget
       </h1>
-      <div className="mt-[90px] bg-[#333333] w-full py-24">
+      <div className=" bg-[#333333] w-full py-24">
         <div className="max-w-[1440px] flex justify-center items-center w-full h-full  mx-auto">
           <div className="flex justify-center gap-x-2 md:gap-x-12 gap-y-12 flex-wrap">
             <div className="flex flex-col w-[300px]  hover:bg-[#282828] space-y-4 rounded-md p-2 transition-all duration-500 gap-y-2  items-center">

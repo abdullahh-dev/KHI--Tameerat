@@ -23,13 +23,13 @@ function HServicesSec() {
   ];
 
   return (
-    <div className="max-w-[1440px] m-auto mt-[110px]">
+    <div className="max-w-[1440px] m-auto mt-[55px] md:mt-[110px]">
       <span className="flex justify-center">
-        <h1 className=" uppercase text-[18px] font-bold tracking-[2px] text-[#9ED220]">
+        <h1 className="uppercase text-[18px] font-bold tracking-[2px] text-[#9ED220]">
           Our Services
         </h1>
       </span>
-      <h1 className="text-center mb-[90px] leading-tight mt-[32px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[635px]">
+      <h1 className="text-center px-[10px] mb-[45px] md:mb-[90px] leading-tight mt-[12px] md:mt-[32px] font-extrabold text-[24px] md:text-[40px] m-auto text-[#333333] max-w-[635px]">
         Excellence in construction and other services
       </h1>
       <div className="flex flex-col items-center px-[20px] gap-y-8 md:flex-row lg:gap-[40px] flex-wrap justify-center">

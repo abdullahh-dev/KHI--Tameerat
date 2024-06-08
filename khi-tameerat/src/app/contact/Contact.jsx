@@ -18,14 +18,14 @@ const Contact = () => {
     <div className="bg-gray-50">
       <BGSection data={aboutUsData} />
       {/* Contact Form Container */}
-      <div className="md-max:flex md:flex-row justify-between max-w-[1440px] flex flex-col gap-y-8 px-[10px] lg:px-20 mx-auto mt-[40px] md:mt-[170px]">
+      <div className="md-max:flex md:flex-row justify-between max-w-[1440px] flex flex-col gap-y-2 md:gap-y-8 px-[10px] lg:px-20 mx-auto mt-[40px] md:mt-[170px]">
         <div>
           <p className="text-[#9ED220] font-bold text-[18px]">Contact Us</p>
-          <h1 className="pt-2 text-[36px] leading-tight md:text-[48px] font-bold max-w-[900px] text-[#333333]">
+          <h1 className="pt-2 text-[24px] leading-tight md:text-[48px] font-bold max-w-[900px] text-[#333333]">
             Get in touch with KHI-Tameraat's team of experts
           </h1>
         </div>
-        <div className="text-[18px]">
+        <div className="text-[16px]">
           <p className="text-[20px] text-[#333333]/90 md:mb-4">
             Give us a call or send us a message for any queries regarding our
             companies, culture or services' portfolio.
@@ -51,10 +51,10 @@ const Contact = () => {
 
       <div className="md-max:flex md:flex-row gap-2 md:gap-24 max-w-[1440px] flex flex-col gap-y-8 px-[10px] lg:px-20 justify-between mx-auto mt-[40px] md:mt-[170px] mb-[60px]">
         <div>
-          <h1 className="pt-2 text-[42px] font-bold text-[#333333] ">
+          <h1 className="pt-2 text-[24px] md:text-[40px] font-bold text-[#333333] ">
             Leave us a message
           </h1>
-          <p className="text-[#9ED220] font-bold text-[18px]">
+          <p className="text-[#9ED220] font-bold text-[14px] md:text-[18px]">
             Our team would love to hear from you.
           </p>
         </div>

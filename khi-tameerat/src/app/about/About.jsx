@@ -18,14 +18,14 @@ function About() {
       <BGSection data={aboutData} />
       <div className="max-w-[1440px] px-[10px] mx-auto">
         <div class="text-center md:px-8">
-          <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[2px] mt-[40px] md:mt-[110px] text-[#9ED220]">
+          <h1 className="uppercase text-[18px] font-bold tracking-[2px] mt-[40px] md:mt-[110px] text-[#9ED220]">
             About Us
           </h1>
-          <h1 className="text-center mb-[36px] leading-tight mt-[4px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[600px]">
+          <h1 className="text-center mb-[45px] leading-tight mt-[12px]  font-extrabold text-[24px] md:text-[40px] m-auto text-[#333333] max-w-[635px]">
             Experts in construction and innovative solutions.
           </h1>
           <p class="md:text-[22px] text-[16px] text-gray-500 leading-relaxed">
-            At
+            At {''}
             <span className="text-[#9ED220] font-semibold">KHI Tameraat</span>,
             we pride ourselves on being one of the leading engineering firm,
             specializing in construction, renovation, and estimation services.
@@ -42,7 +42,7 @@ function About() {
           <h1 className="px-[28px] py-[8px] uppercase text-[18px] font-bold tracking-[2px] mt-[40px] lg:mt-[80px] text-[#9ED220]">
             Our Team
           </h1>
-          <h1 className="text-center leading-tight mt-[4px] font-extrabold text-[40px] m-auto text-[#333333] max-w-[600px]">
+          <h1 className="text-center leading-tight mt-[4px] font-extrabold text-[24px] md:text-[40px] m-auto text-[#333333] max-w-[635px]">
             Skilled professionals driving excellence.
           </h1>
           <TeamSection />
