@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import bgImg from '../../assets/images/about-media/aboutus.jpg';
+import bgImg from '../../assets/images/about-media/aboutusbg.jpeg';
 import TeamSection from '../components/team/TeamSection';
 import BGSection from '../components/BgSection.jsx';
 

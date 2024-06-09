@@ -7,7 +7,8 @@ import img3P1 from '../../../assets/images/Renovation_images/14MarlaHouse3.jpeg'
 import img1P2 from '../../../assets/images/Renovation_images/SportsComplex1.jpeg';
 import img2P2 from '../../../assets/images/Renovation_images/SportsComplex2.jpeg';
 import img3P2 from '../../../assets/images/Renovation_images/SportsComplex3.jpeg';
-
+import img1P3 from '../../../assets/images/Renovation_images/chakshahzad1.jpeg';
+import img2P3 from '../../../assets/images/Renovation_images/chakshahzad2.jpeg';
 import BGSection from '../../components/BgSection';
 function Renovation() {
   const projects = [
@@ -15,19 +16,19 @@ function Renovation() {
       images: [img1P1, img2P1, img3P1],
       title: 'Renovation of 14 Marla house in PWD',
       description:
-        'Restoring and reinforcing a structural barrier to ensure safety and durability against high-impact forces.',
+        'Complete renovation of a 14 Marla house in PWD, including structural upgrades, modernization, and aesthetic enhancements',
     },
     {
       images: [img1P2, img2P2, img3P2],
       title: 'Refurbishment of sports complex, Islamabad',
       description:
-        'Planning, designing, and building a functional and efficient workspace to support business operations.',
+        'Revamping Islamabad sports complex with sleek upgrades and contemporary amenities to elevate the athletic experience for all',
     },
     {
-      images: [img1P1, img2P1],
-      title: 'Construction of 14 Marla Residential House in PWD',
+      images: [img1P3, img2P3],
+      title: 'Renovation of warehouse of Idress',
       description:
-        'Building a modern home in the PWD area, ensuring quality craftsmanship and compliance with local regulations.',
+        'Transforming Idress warehouse through a complete renovation, optimizing space, and enhancing functionality for improved operations.',
     },
   ];
 
