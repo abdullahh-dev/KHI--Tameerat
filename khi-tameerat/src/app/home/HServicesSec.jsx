@@ -11,7 +11,7 @@ function HServicesSec() {
       link: 'construction',
     },
     {
-      title: 'Drafting & Planning',
+      title: 'Estimation & Drafting',
       src: estimationImg,
       link: 'estimation',
     },
@@ -33,8 +33,10 @@ function HServicesSec() {
         Excellence in construction and other services
       </h1>
       <div className="flex flex-col items-center px-[20px] gap-y-8 md:flex-row lg:gap-[40px] flex-wrap justify-center">
-        {servicesData.map((s) => (
-          <div className="lg:max-w-[320px] w-[100%] md:max-w-[320px] gap-4 overflow-hidden group relative h-[410px] cursor-pointer rounded-[4px]">
+        {servicesData.map((s, index) => (
+          <div
+            key={index}
+            className="lg:max-w-[320px] w-[100%] md:max-w-[320px] gap-4 overflow-hidden group relative h-[410px] cursor-pointer rounded-[4px]">
             <div className="absolute bottom-[0px] left-4 group-hover:bottom-36 z-[99999] transition-all duration-1000 text-white">
               <h1 className="text-[24px] leading-tight font-semibold">
                 {s.title}
@@ -42,7 +44,7 @@ function HServicesSec() {
               <span className="opacity-0 group-hover:opacity-100 transition-all duration-700 ">
                 <Link
                   to={`/${s.link}`}
-                  className="inline-block border-[2px] p-2 mt-4 hover:bg-[#9ED220] text-[13px]">
+                  className="inline-block border-[2px] p-2 mt-4 hover:bg-[#9ED220] hover:text-[#333333] text-[13px]">
                   View Details
                 </Link>
               </span>

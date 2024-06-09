@@ -113,6 +113,10 @@ function NavLinks() {
                     </li>
                     <li>
                       <NavLink
+                        onClick={() => {
+                          setDropDownVisibility('hidden');
+                          setMenuBarV('hidden');
+                        }}
                         to="/estimation"
                         className="block px-4 py-2 hover:text-[#9dd221]">
                         Estimation
@@ -120,6 +124,10 @@ function NavLinks() {
                     </li>
                     <li>
                       <NavLink
+                        onClick={() => {
+                          setDropDownVisibility('hidden');
+                          setMenuBarV('hidden');
+                        }}
                         to="/renovation"
                         className="block px-4 py-2 hover:text-[#9dd221]">
                         Renovation

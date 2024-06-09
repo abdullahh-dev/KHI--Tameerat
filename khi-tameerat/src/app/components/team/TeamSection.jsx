@@ -5,6 +5,7 @@ import nadeem from '../../../assets/images/team_images/nadeem.png';
 import haseeb from '../../../assets/images/team_images/haseeb.jpg';
 import junaid from '../../../assets/images/team_images/junaid.jpg';
 import mahira from '../../../assets/images/team_images/mahira.jpg';
+import zeeshan from '../../../assets/images/team_images/zeeshan.jpg';
 function TeamSection() {
   const teamData = [
     {
@@ -36,6 +37,11 @@ function TeamSection() {
       name: 'Engr. Mahira Zulifqar',
       src: mahira,
       title: 'HR Manager',
+    },
+    {
+      name: 'Engr. Zeeshan Ahmed',
+      src: zeeshan,
+      title: 'Director Contract and Business Development',
     },
   ];
 

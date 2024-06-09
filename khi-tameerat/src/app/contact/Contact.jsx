@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import bgImg from '../../assets/images/contact.jpg';
+import bgImg from '../../assets/images/bg-images/architect-working-with-drone-laptop-construction-site-ai-generated-image_548729-4534.jpg';
 import { IoIosMail } from 'react-icons/io';
 import { MdLocalPhone } from 'react-icons/md';
 import { IoLocation } from 'react-icons/io5';
 import BGSection from '../components/BgSection';
+import ContactForm from '../components/contactusForm/ContactForm';
 
 const Contact = () => {
   useEffect(() => {
@@ -18,18 +19,18 @@ const Contact = () => {
     <div className="bg-gray-50">
       <BGSection data={aboutUsData} />
       {/* Contact Form Container */}
-      <div className="md-max:flex md:flex-row justify-between max-w-[1440px] flex flex-col gap-y-2 md:gap-y-8 px-[10px] lg:px-20 mx-auto mt-[40px] md:mt-[170px]">
+      <div className="lg:flex-row gap-2 md:gap-24 justify-between max-w-[1440px] flex flex-col gap-y-2 md:gap-y-8 px-[10px] lg:px-20 mx-auto mt-[40px] md:mt-[170px]">
         <div>
           <p className="text-[#9ED220] font-bold text-[18px]">Contact Us</p>
-          <h1 className="pt-2 text-[24px] leading-tight md:text-[48px] font-bold max-w-[900px] text-[#333333]">
+          <h1 className="pt-2 text-[28px] leading-tight md:text-[48px] font-bold max-w-[900px] text-[#333333]">
             Get in touch with KHI-Tameraat's team of experts
           </h1>
         </div>
         <div className="text-[16px]">
-          <p className="text-[20px] text-[#333333]/90 md:mb-4">
+          <h1 className="text-[20px] max-w-[700px] min-w-[500px] text-[#333333]/90 md:mb-4">
             Give us a call or send us a message for any queries regarding our
             companies, culture or services' portfolio.
-          </p>
+          </h1>
           <ul className="text-[#dbdbdb] pt-4 space-y-4 font-medium">
             <li className="flex gap-x-2 text-[#333333] items-center">
               {' '}
@@ -49,9 +50,9 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="md-max:flex md:flex-row gap-2 md:gap-24 max-w-[1440px] flex flex-col gap-y-8 px-[10px] lg:px-20 justify-between mx-auto mt-[40px] md:mt-[170px] mb-[60px]">
+      <div className="md-max:flex lg:flex-row gap-2 lg:gap-24 max-w-[1440px] flex flex-col gap-y-8 px-[10px] lg:px-20 justify-between mx-auto mt-[40px] lg:mt-[120px] mb-[60px]">
         <div>
-          <h1 className="pt-2 text-[24px] md:text-[40px] font-bold text-[#333333] ">
+          <h1 className="pt-2 text-[28px] md:text-[48px] font-bold text-[#333333] ">
             Leave us a message
           </h1>
           <p className="text-[#9ED220] font-bold text-[14px] md:text-[18px]">
@@ -59,45 +60,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="bg-[#333333] text-white h-max p-8 rounded-lg shadow-md z-10 max-w-lg w-full">
-          <form className="space-y-4 w-full">
-            <div>
-              <label htmlFor="name" className="block font-medium">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full mt-2 h-8 text-[#333333] px-2 rounded-[4px]"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full mt-2 h-8 text-[#333333] px-2 rounded-[4px]"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block font-medium">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                className="w-full h-[120px] mt-2 text-[#333333] px-2 rounded-[4px]"></textarea>
-            </div>
-            <button
-              type="submit"
-              className="bg-[#9dd221] p-2 text-[#333333] rounded-[4px] hover:bg-[#abdd35] w-full">
-              Submit
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </div>

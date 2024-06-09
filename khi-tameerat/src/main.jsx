@@ -9,6 +9,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Construction from './app/services/construction/Construction.jsx';
 import Estimation from './app/services/estimation/Estimation.jsx';
 import Careers from './app/careers/Careers.jsx';
+import Renovation from './app/services/renovation/Renovation.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/careers',
         element: <Careers />,
+      },
+      {
+        path: '/renovation',
+        element: <Renovation />,
       },
     ],
   },
