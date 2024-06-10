@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import bgImg from '../../assets/images/bg-images/architect-working-with-drone-laptop-construction-site-ai-generated-image_548729-4534.jpg';
+import bgImg from '../../assets/images/contact_us.png';
 import { IoIosMail } from 'react-icons/io';
 import { MdLocalPhone } from 'react-icons/md';
 import { IoLocation } from 'react-icons/io5';
