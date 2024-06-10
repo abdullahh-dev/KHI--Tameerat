@@ -27,7 +27,7 @@ const Contact = () => {
           </h1>
         </div>
         <div className="text-[16px]">
-          <h1 className="text-[20px] max-w-[700px] min-w-[500px] text-[#333333]/90 md:mb-4">
+          <h1 className="text-[20px] max-w-[700px] text-[#333333]/90 md:mb-4">
             Give us a call or send us a message for any queries regarding our
             companies, culture or services' portfolio.
           </h1>
