@@ -73,17 +73,17 @@ const Footer = () => {
                 Contact
               </h2>
               <ul className="text-[#dbdbdb] font-medium space-y-3 text-[14px]">
-                <li className="flex gap-x-3 items-center">
+                <li className="flex gap-x-2 items-center">
                   {' '}
                   <MdLocalPhone color="9ED220" size={18} />
                   (+92)-312 1955286
                 </li>
-                <li className="flex justify-centers gap-x-3 items-center">
+                <li className="flex justify-centers gap-x-2 items-center">
                   {' '}
                   <IoIosMail color="9ED220" size={18} />
                   info@khitameraat.com
                 </li>
-                <li className="flex justify-centers gap-x-3 items-center">
+                <li className="flex justify-centers gap-x-2 items-center">
                   <IoLocation color="9ED220" size={18} />
                   Block D, Satellite Town, Rawalpindi
                 </li>
