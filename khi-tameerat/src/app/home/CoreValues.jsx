@@ -43,7 +43,7 @@ function CoreValues() {
   ];
 
   return (
-    <div className="md:mt-[110px] mt-[55px]">
+    <div className="md:mt-[160px] mt-[45px]">
       <span className="flex justify-center">
         <h1 className="uppercase text-[18px] font-bold tracking-[2px] text-[#9ED220]">
           Why Choose Us?

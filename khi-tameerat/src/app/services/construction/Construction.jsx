@@ -1,6 +1,6 @@
 import React from 'react';
 import BasicTabs from '../../_lib/Tabs.jsx';
-import bgImg from '../../../assets/images/bg-images/estimationbg.jpeg';
+import bgImg from '../../../assets/images/bg-images/constructionbg.jpeg';
 import img1P1 from '../../../assets/images/construction-images/constructionHouse1.png';
 import img2P1 from '../../../assets/images/construction-images/constructionhouse2.png';
 import img1P2 from '../../../assets/images/construction-images/constructionoffice1.png';

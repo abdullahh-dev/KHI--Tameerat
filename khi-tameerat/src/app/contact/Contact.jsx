@@ -44,7 +44,7 @@ const Contact = () => {
             </li>
             <li className="flex gap-x-2 text-[#333333] items-center">
               <IoLocation color="9ED220" size={28} />
-              Block B, Satellite Town, Rawalpindi
+              Block D, Satellite Town, Rawalpindi
             </li>
           </ul>
         </div>

@@ -82,7 +82,7 @@ const Footer = () => {
                 </li>
                 <li className="flex justify-centers gap-x-3 items-center">
                   <IoLocation color="9ED220" size={18} />
-                  Block B, Satellite Town, Rawalpindi
+                  Block D, Satellite Town, Rawalpindi
                 </li>
               </ul>
             </div>

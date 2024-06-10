@@ -23,7 +23,7 @@ function HServicesSec() {
   ];
 
   return (
-    <div className="max-w-[1440px] m-auto mt-[55px] md:mt-[110px]">
+    <div className="max-w-[1440px] m-auto mt-[45px] md:mt-[160px]">
       <span className="flex justify-center">
         <h1 className="uppercase text-[18px] font-bold tracking-[2px] text-[#9ED220]">
           Our Services
