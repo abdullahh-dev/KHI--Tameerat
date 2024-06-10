@@ -15,21 +15,21 @@ function Renovation() {
   const projects = [
     {
       images: [img1P1, img2P1, img3P1],
-      title: 'Renovation of 14 Marla house in PWD',
+      title: 'Renovation of Residential Houses, Pakistan',
       description:
-        'Complete renovation of a 14 Marla house in PWD, including structural upgrades, modernization, and aesthetic enhancements',
+        'Revitalizing homes with tailored renovations that blend functionality with aesthetic appeal throughout Pakistan.',
     },
     {
       images: [img1P2, img2P2, img3P2],
-      title: 'Refurbishment of sports complex, Islamabad',
+      title: 'Refurbishment of Sports Complex, Islamabad, Pakistan',
       description:
-        'Revamping Islamabad sports complex with sleek upgrades and contemporary amenities to elevate the athletic experience for all',
+        'Reviving the heart of sports in Islamabad with a comprehensive refurbishment, enhancing facilities for athletes and enthusiasts alike.',
     },
     {
       images: [img1P3, img2P3],
-      title: 'Renovation of warehouse of Idress',
+      title: 'Renovation of Ware House of IDress, Islamabad, Pakistan',
       description:
-        'Transforming Idress warehouse through a complete renovation, optimizing space, and enhancing functionality for improved operations.',
+        'Elevating operational efficiency and modernizing infrastructure to optimize storage solutions for iDress in Islamabad, Pakistan.',
     },
   ];
 

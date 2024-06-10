@@ -18,21 +18,22 @@ function Renovation() {
   const projects = [
     {
       images: [img1P3, img2P3],
-      title: 'Re Construction of Impact Wall of Khushal CNG',
+      title: 'Construction of Impact Wall of Khushal CNG, Charsadda, Pakistan',
       description:
         'Restoring and reinforcing a structural barrier to ensure safety and durability against high-impact forces.',
     },
     {
       images: [img1P2, img2P2, img3P2],
-      title: 'Construction of a KSN office',
+      title:
+        'Construction of Business Workspace for KSN Office, Rawalpindi, Pakistan',
       description:
         'Planning, designing, and building a functional and efficient workspace to support business operations.',
     },
     {
       images: [img1P1, img2P1, img3P1, img4P1, img5P1, img6P1],
-      title: 'Construction of Residential Houses',
+      title: 'Construction of Residential Houses, Pakistan',
       description:
-        'Building a modern home in the PWD area, ensuring quality craftsmanship and compliance with local regulations.',
+        'Transforming spaces into homes with expert craftsmanship and quality materials across Pakistan.',
     },
   ];
 

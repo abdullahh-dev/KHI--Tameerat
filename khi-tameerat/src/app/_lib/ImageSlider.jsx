@@ -31,7 +31,7 @@ const Slideshow = ({ data }) => {
         </Slide>
       </div>
       <div className="px-4 mb-2 py-3">
-        <h1 className="font-semibold leading-[25px] mb-2  text-[24px]">
+        <h1 className="font-bold leading-[24px] mb-2  text-[20px]">
           {data.title}
         </h1>
         <p className="text-[14px] text-gray-500">{data.description}</p>
