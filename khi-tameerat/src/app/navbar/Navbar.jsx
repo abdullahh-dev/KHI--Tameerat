@@ -28,6 +28,7 @@ function Navbar() {
                 </svg>
               </a>
               <a
+                target="_blank"
                 href="https://www.instagram.com/khitameraat/?utm_source=ig_web_button_share_sheet"
                 className="bg-[#333333] flex w-8 h-8 rounded-[5px] items-center justify-center">
                 <svg
@@ -47,6 +48,7 @@ function Navbar() {
                 </svg>
               </a>
               <a
+                target="_blank"
                 href="https://www.linkedin.com/company/khitameraat/"
                 className="bg-[#333333] flex w-8 h-8 rounded-[5px] items-center justify-center">
                 <svg

@@ -17,6 +17,7 @@
     "@formspree/react": "^2.5.1",
     "@hookform/resolvers": "^3.6.0",
     "@mui/material": "^5.15.17",
+    "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
@@ -25,6 +26,7 @@
     "react-multi-carousel": "^2.8.5",
     "react-router-dom": "^6.23.0",
     "react-slideshow-image": "^4.3.1",
+    "react-toastify": "^10.0.5",
     "yup": "^1.4.0"
   },
   "devDependencies": {

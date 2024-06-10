@@ -64,10 +64,10 @@ export default function BasicTabs({ data, title }) {
           </Box>
 
           <CustomTabPanel value={value} index={0}>
-            <h1 className="text-[#9ED220] font-bold text-center my-6 text-[24px]">
+            <h1 className="text-[#9ED220] font-bold text-center my-6 text-[24px] md:text-[36px]">
               {title}
             </h1>
-            <div className="grid grid-cols-1 gap-y-8 gap-x-2  md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-y-8 gap-x-2 py-8 md:py-24 md:grid-cols-2 lg:grid-cols-3">
               {data.map((d) => (
                 <ImageSlider data={d} />
               ))}

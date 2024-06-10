@@ -44,6 +44,7 @@ const Footer = () => {
               <ul className="text-[#dbdbdb] font-medium space-y-2 text-[14px]">
                 <li>
                   <a
+                    target="_blank"
                     href="https://www.facebook.com/profile.php?id=61560569131512"
                     className="hover:underline antialiased ">
                     Facebook
@@ -51,6 +52,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
+                    target="_blank"
                     href="https://www.instagram.com/khitameraat/?utm_source=ig_web_button_share_sheet"
                     className="hover:underline">
                     Instagram
@@ -58,6 +60,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
+                    target="_blank"
                     href="https://www.linkedin.com/company/khitameraat/"
                     className="hover:underline">
                     LinkedIn
@@ -99,6 +102,7 @@ const Footer = () => {
           </span>
           <div className="flex mt-4 justify-center gap-x-[12px] items-center sm:mt-0">
             <a
+              target="_blank"
               href="https://www.facebook.com/profile.php?id=61560569131512"
               className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
               <svg
@@ -117,6 +121,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
+              target="_blank"
               href="https://www.instagram.com/khitameraat/?utm_source=ig_web_button_share_sheet"
               className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
               <svg
@@ -136,6 +141,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
+              target="_blank"
               href="https://www.linkedin.com/company/khitameraat/"
               className="bg-[#9dd221] flex w-8 h-8 rounded-full items-center justify-center">
               <svg
