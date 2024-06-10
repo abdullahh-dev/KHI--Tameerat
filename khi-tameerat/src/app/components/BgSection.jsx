@@ -3,7 +3,7 @@ import React from 'react';
 function BGSection({ data }) {
   return (
     <>
-      <div class="relative h-[300px] md:h-[800px] group overflow-hidden  flex items-center justify-center">
+      <div class="relative h-[200px] md:h-[800px] group overflow-hidden  flex items-center justify-center">
         <img
           src={data.img}
           alt={data.img + 'Image'}
