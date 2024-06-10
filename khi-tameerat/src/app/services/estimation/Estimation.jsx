@@ -19,6 +19,9 @@ import img3P3 from '../../../assets/images/estimation/project3/3.jpg';
 import img1P4 from '../../../assets/images/estimation/project4/1.jpeg';
 import img2P4 from '../../../assets/images/estimation/project4/2.jpeg';
 import img3P4 from '../../../assets/images/estimation/project4/2.jpeg';
+import img1P5 from '../../../assets/images/estimation/project5/1.jpeg';
+import img2P5 from '../../../assets/images/estimation/project5/2.jpeg';
+import img3P5 from '../../../assets/images/estimation/project5/3.jpeg';
 
 import BGSection from '../../components/BgSection';
 function Renovation() {
@@ -49,6 +52,12 @@ function Renovation() {
         'Center line plan, reinforcement plan and elevation of second floor of Masjid Al Habib, PWD, Pakistan',
       description:
         'Structural Harmony and Detail: Center Line, Reinforcement Plans, and Elevation for Masjid Al Habibs Second Floor',
+    },
+    {
+      images: [img1P5, img2P5, img3P5],
+      title: 'Grading Report of Woodford State School New Amenities, USA',
+      description:
+        'Elevating Excellence with Modern Amenities for a Brighter Future',
     },
   ];
 

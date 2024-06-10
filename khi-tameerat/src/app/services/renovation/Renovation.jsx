@@ -9,6 +9,7 @@ import img2P2 from '../../../assets/images/Renovation_images/SportsComplex2.jpeg
 import img3P2 from '../../../assets/images/Renovation_images/SportsComplex3.jpeg';
 import img1P3 from '../../../assets/images/Renovation_images/chakshahzad1.jpeg';
 import img2P3 from '../../../assets/images/Renovation_images/chakshahzad2.jpeg';
+
 import BGSection from '../../components/BgSection';
 function Renovation() {
   const projects = [
