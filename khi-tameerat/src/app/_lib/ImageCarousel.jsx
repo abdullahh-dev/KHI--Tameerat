@@ -26,7 +26,7 @@ function ImageCarousel() {
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1224, min: 464 },
+      breakpoint: { max: 1024, min: 464 },
       items: 2,
     },
     mobile: {
@@ -39,17 +39,16 @@ function ImageCarousel() {
     <>
       <Carousel
         className="h-[300px] md:h-[600px]"
-        swipeable={true}
-        draggable={true}
+        swipeable={false}
+        draggable={false}
         showDots={true}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
         autoPlay={deviceType !== 'mobile'}
-        autoPlaySpeed={400}
+        autoPlaySpeed={2000}
         keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={2000}
+        transitionDuration={200}
         containerClass="carousel-container"
         deviceType={deviceType}
         dotListClass="custom-dot-list-style"
@@ -57,11 +56,11 @@ function ImageCarousel() {
         {galleryImages.map((i, index) => (
           <div
             key={index}
-            className="max-h-[260px] w-full sm:w-auto  rounded-[8px] carousel-item overflow-hidden mr-4 sm:max-h-[200px] md:max-h-[300px] max-md:max-h-[200px] lg:max-h-[400px]">
+            className="h-[400px] md:h-[400px] md:max-w-[470px] mb-4 w-full aspect-square lg:max-w-[550px] lg:h-[550px] mx-auto carousel-item overflow-hidden mr-0">
             <img
-              className="hover:scale-125 duration-1000 hover:translate-x-6"
+              className="hover:scale-125 scale-[.85] duration-1000 w-full h-full object-cover hover:translate-x-6"
               src={i}
-              alt={i + 'img'}
+              alt="gallery image"
             />
           </div>
         ))}

@@ -68,7 +68,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="col-span-3 md:col-span-1">
               <h2 className="mb-4 md:mb-6 text-[16px] font-semibold text-[#9ED220]">
                 Contact
               </h2>
@@ -78,11 +78,14 @@ const Footer = () => {
                   <MdLocalPhone color="9ED220" size={18} />
                   (+92)-312 1955286
                 </li>
-                <li className="flex justify-centers gap-x-2 items-center">
+                <a
+                  target="_blank"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=info@khitameraat.com&su=&body="
+                  className="flex justify-centers gap-x-2 items-center">
                   {' '}
                   <IoIosMail color="9ED220" size={18} />
                   info@khitameraat.com
-                </li>
+                </a>
                 <li className="flex justify-centers gap-x-2 items-center">
                   <IoLocation color="9ED220" size={18} />
                   Block D, Satellite Town, Rawalpindi

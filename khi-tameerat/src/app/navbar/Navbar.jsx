@@ -2,7 +2,7 @@ import React from 'react';
 import NavLinks from './NavLinks';
 function Navbar() {
   return (
-    <div>
+    <div className="relative z-[100000]">
       <div className="bg-[#9dd221]">
         <div className="max-w-screen-xl py-[10px] px-[10px] m-auto">
           <div className="flex justify-between items-center">
