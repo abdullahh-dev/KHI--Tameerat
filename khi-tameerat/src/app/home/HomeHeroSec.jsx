@@ -33,11 +33,14 @@ function HomeHeroSec() {
           process, from concept to completion, we make your vision a reality.
         </p>
         <div className="flex flex-col w-full justify-center md:flex-row gap-2 md:space-x-4 mt-4 md:mt-12 font-semibold">
-          <Link className="group-hover:translate-x-[3px]" to="/contact">
+          <Link to="/contact">
             <button className="bg-[#9dd221] text-[16px] group px-[20px] text-[#333333] py-[8px] rounded-[4px]">
-              <div className="group-hover:translate-x-[3px] inline-block transition-all duration-500">
+              <div className="inline-block transition-all duration-500">
                 Get in Touch
-                <HiArrowLongRight size={24} className="inline-block ml-[4px]" />
+                <HiArrowLongRight
+                  size={24}
+                  className="inline-block group-hover:translate-x-[3px] transition-all duration-500 ml-[4px]"
+                />
               </div>
             </button>
           </Link>
