@@ -1,19 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import bgImg from '/src/assets/images/bg-images/home.jpg';
 import { HiArrowLongRight } from 'react-icons/hi2';
 function HomeHeroSec() {
   return (
     <div className="relative w-full h-[60vh] overflow-hidden md:h-[90vh]">
-      {/* Background Image */}
       <img
-        src="/src/assets/images/bg-images/home.jpg"
+        src={bgImg}
         alt="Background"
         className="w-full h-full object-cover"
       />
 
       <div className="absolute inset-0 bg-black opacity-60"></div>
 
-      {/* Content */}
       <div className="absolute inset-0 max-w-[1440px] px-[10px] text-white mx-auto w-full h-full flex flex-col justify-center items-center">
         <div className="md:max-w-[800px] text-[36px] md:text-[80px] text-center font-extrabold leading-[40px] md:leading-[88px]">
           <h1>
