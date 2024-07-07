@@ -1,14 +1,12 @@
 import React from 'react';
-import { FaLongArrowAltRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
 import { HiArrowLongRight } from 'react-icons/hi2';
 function HomeHeroSec() {
   return (
     <div className="relative w-full h-[60vh] overflow-hidden md:h-[90vh]">
       {/* Background Image */}
       <img
-        src="/src/assets/images/bg-imageee1.jpg"
+        src="/src/assets/images/bg-images/home.jpg"
         alt="Background"
         className="w-full h-full object-cover"
       />

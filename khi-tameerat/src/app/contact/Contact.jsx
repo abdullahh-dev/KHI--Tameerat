@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import bgImg from '../../assets/images/contact_us.png';
+import bgImg from '../../assets/images/bg-images/contact_us.png';
 import { IoIosMail } from 'react-icons/io';
 import { MdLocalPhone } from 'react-icons/md';
 import { IoLocation } from 'react-icons/io5';

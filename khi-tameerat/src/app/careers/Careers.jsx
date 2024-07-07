@@ -1,6 +1,6 @@
 import React from 'react';
 import BGSection from '../components/BgSection';
-import bgImg from '../../assets/images/careers.jpg';
+import bgImg from '../../assets/images/bg-images/careers.jpg';
 import nojob from '../../assets/images/nojob.png';
 
 const careersData = {
