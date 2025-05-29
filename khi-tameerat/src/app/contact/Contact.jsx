@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import bgImg from '../../assets/images/bg-images/contact_us.png';
-import { IoIosMail } from 'react-icons/io';
-import { MdLocalPhone } from 'react-icons/md';
-import { IoLocation } from 'react-icons/io5';
-import BGSection from '../components/BgSection';
-import ContactForm from '../components/contactusForm/ContactForm';
+import { useEffect } from "react";
+import { IoIosMail } from "react-icons/io";
+import { IoLocation } from "react-icons/io5";
+import { MdLocalPhone } from "react-icons/md";
+import bgImg from "../../assets/images/bg-images/contact_us.png";
+import BGSection from "../components/BgSection";
+import ContactForm from "../components/contactusForm/ContactForm";
 
 const Contact = () => {
   useEffect(() => {
@@ -12,8 +12,8 @@ const Contact = () => {
   }, []);
   const aboutUsData = {
     img: bgImg,
-    title: 'Contact Us',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, pariatur.',
+    title: "Contact Us",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, pariatur.",
   };
   return (
     <div className="bg-gray-50">
@@ -23,7 +23,7 @@ const Contact = () => {
         <div>
           <p className="text-[#9ED220] font-bold text-[18px]">Contact Us</p>
           <h1 className="pt-2 text-[28px] leading-tight md:text-[48px] font-bold max-w-[900px] text-[#333333]">
-            Get in touch with KHI-Tameraat's team of experts
+            {`            Get in touch with KHI-Tameraat's team of experts`}
           </h1>
         </div>
         <div className="text-[16px]">
@@ -33,12 +33,12 @@ const Contact = () => {
           </h1>
           <ul className="text-[#dbdbdb] pt-4 space-y-4 font-medium">
             <li className="flex gap-x-2 text-[#333333] items-center">
-              {' '}
+              {" "}
               <MdLocalPhone color="9ED220" size={28} />
               (+92)-312 1955286
             </li>
             <li className="flex gap-x-2 text-[#333333] items-center">
-              {' '}
+              {" "}
               <IoIosMail color="9ED220" size={28} />
               info@khitameraat.com
             </li>

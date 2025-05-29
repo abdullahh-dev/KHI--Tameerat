@@ -1,21 +1,20 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
-import emailjs from 'emailjs-com';
-const serviceID = 'service_t1yoxmf';
-const templateID = 'template_3n2stst';
-const userID = '11Y6RODWlVy_U5hOx';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { yupResolver } from "@hookform/resolvers/yup";
+import emailjs from "emailjs-com";
+import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import * as yup from "yup";
+const serviceID = "service_t1yoxmf";
+const templateID = "template_3n2stst";
+const userID = "11Y6RODWlVy_U5hOx";
 
 const schema = yup.object().shape({
-  name: yup.string().required('Name is required'),
+  name: yup.string().required("Name is required"),
   email: yup
     .string()
-    .email('Email must be a valid email')
-    .required('Email is required'),
-  message: yup.string().required('Message is required'),
+    .email("Email must be a valid email")
+    .required("Email is required"),
+  message: yup.string().required("Message is required"),
 });
 
 function ContactForm() {
@@ -31,39 +30,39 @@ function ContactForm() {
   const formSubmit = (data) => {
     emailjs.send(serviceID, templateID, data, userID).then(
       (response) => {
-        if ((response.text = 'OK')) {
-          toast.success('Email sent successfully!', {
-            position: 'top-right',
+        if (response.text === "OK") {
+          toast.success("Email sent successfully!", {
+            position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: 'colored',
+            theme: "colored",
           });
         }
         reset({
-          name: '',
-          email: '',
-          message: '',
+          name: "",
+          email: "",
+          message: "",
         });
       },
       (error) => {
-        toast.error('Failed to send email.', {
-          position: 'top-right',
+        toast.error(error.message || "Failed to send email.", {
+          position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: 'colored',
+          theme: "colored",
         });
         reset({
-          name: '',
-          email: '',
-          message: '',
+          name: "",
+          email: "",
+          message: "",
         });
       }
     );
@@ -89,7 +88,7 @@ function ContactForm() {
             Name
           </label>
           <input
-            {...register('name')}
+            {...register("name")}
             type="text"
             id="name"
             name="name"
@@ -106,7 +105,7 @@ function ContactForm() {
             Email
           </label>
           <input
-            {...register('email')}
+            {...register("email")}
             type="email"
             id="email"
             name="email"
@@ -123,11 +122,12 @@ function ContactForm() {
             Message
           </label>
           <textarea
-            {...register('message')}
+            {...register("message")}
             id="message"
             name="message"
             rows="4"
-            className="w-full h-[120px] mt-2 text-[#333333] px-2 rounded-[4px]"></textarea>
+            className="w-full h-[120px] mt-2 text-[#333333] px-2 rounded-[4px]"
+          ></textarea>
           {errors.message && (
             <p className="text-[14px] font-bold text-red-600">
               {errors.message?.message}
@@ -136,7 +136,8 @@ function ContactForm() {
         </div>
         <button
           type="submit"
-          className="bg-[#9dd221] p-2 text-[#333333] rounded-[4px] hover:bg-[#abdd35] w-full">
+          className="bg-[#9dd221] p-2 text-[#333333] rounded-[4px] hover:bg-[#abdd35] w-full"
+        >
           Submit
         </button>
       </form>
