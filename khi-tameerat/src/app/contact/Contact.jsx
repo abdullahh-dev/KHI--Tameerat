@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="text-[16px]">
           <h1 className="text-[20px] max-w-[700px] text-[#333333]/90 md:mb-4">
             Give us a call or send us a message for any queries regarding our
-            companies, culture or services' portfolio.
+            companies, culture or services&apos; portfolio.
           </h1>
           <ul className="text-[#dbdbdb] pt-4 space-y-4 font-medium">
             <li className="flex gap-x-2 text-[#333333] items-center">
