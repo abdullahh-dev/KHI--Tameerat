@@ -1,70 +1,38 @@
-import React from 'react';
-import BasicTabs from '../../_lib/Tabs.jsx';
-import bgImg from '../../../assets/images/bg-images/estimation.jpg';
-import img1P1 from '../../../assets/images/estimation/project1/1.jpg';
-import img2P1 from '../../../assets/images/estimation/project1/2.jpg';
-import img3P1 from '../../../assets/images/estimation/project1/3.jpg';
-import img4P1 from '../../../assets/images/estimation/project1/4.jpg';
-import img5P1 from '../../../assets/images/estimation/project1/5.jpg';
-import img1P2 from '../../../assets/images/estimation/project2/1.jpg';
-import img2P2 from '../../../assets/images/estimation/project2/2.jpg';
-import img3P2 from '../../../assets/images/estimation/project2/3.jpg';
-import img4P2 from '../../../assets/images/estimation/project2/4.jpg';
-import img5P2 from '../../../assets/images/estimation/project2/5.jpg';
-import img6P2 from '../../../assets/images/estimation/project2/6.jpg';
-import img7P2 from '../../../assets/images/estimation/project2/7.jpg';
-import img1P3 from '../../../assets/images/estimation/project3/1.jpg';
-import img2P3 from '../../../assets/images/estimation/project3/2.jpg';
-import img3P3 from '../../../assets/images/estimation/project3/3.jpg';
-import img1P4 from '../../../assets/images/estimation/project4/1.jpeg';
-import img2P4 from '../../../assets/images/estimation/project4/2.jpeg';
-import img3P4 from '../../../assets/images/estimation/project4/2.jpeg';
-import img1P5 from '../../../assets/images/estimation/project5/1.jpeg';
-import img2P5 from '../../../assets/images/estimation/project5/2.jpeg';
-import img3P5 from '../../../assets/images/estimation/project5/3.jpeg';
+import { useEffect, useState } from "react";
+import bgImg from "../../../assets/images/bg-images/estimation.jpg";
+import BasicTabs from "../../_lib/Tabs.jsx";
 
-import BGSection from '../../components/BgSection';
+import axios from "axios";
+import BGSection from "../../components/BgSection";
+import { backend_url } from "../../../config/index.js";
 function Renovation() {
-  const projects = [
-    {
-      images: [img1P1, img2P1, img3P1, img4P1, img5P1],
-      title: 'Quantity take off and cost estimation of hotel at Fairfield, USA',
-      description:
-        'Precision in Planning, Excellence in Execution: Comprehensive Quantity Takeoff and Cost Estimation for Your Fairfield Hotel Project',
-    },
-    {
-      images: [img1P2, img2P2, img3P2, img4P2, img5P2, img6P2, img7P2],
-      title:
-        'Quantity takeoff and cost estimation for Glenfields schools renovation, USA',
-      description:
-        'Revitalizing Education with Precision: Expert Quantity Takeoff and Cost Estimation for Glenfields Schools Renovation',
-    },
-    {
-      images: [img1P3, img2P3, img3P3],
-      title:
-        'Quantity takeoff and cost estimation for Business center Tennesse, USA',
-      description:
-        'Building Success with Precision: Accurate Quantity Takeoff and Cost Estimation for Your Tennessee Business Center',
-    },
-    {
-      images: [img1P4, img2P4, img3P4],
-      title:
-        'Center line plan, reinforcement plan and elevation of second floor of Masjid Al Habib, PWD, Pakistan',
-      description:
-        'Structural Harmony and Detail: Center Line, Reinforcement Plans, and Elevation for Masjid Al Habibs Second Floor',
-    },
-    {
-      images: [img1P5, img2P5, img3P5],
-      title: 'Grading Report of Woodford State School New Amenities, USA',
-      description:
-        'Elevating Excellence with Modern Amenities for a Brighter Future',
-    },
-  ];
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`${backend_url}/api/projects?sort=title:asc&populate=*`)
+      .then((res) => {
+        const setFilteredProjects = res.data.data
+          .filter((p) => p.category === "renovation")
+          .map((project) => {
+            return {
+              id: project.id,
+              title: project.title,
+              description: project.description,
+              images: project.project_image.map((img) => `${img.url}`),
+            };
+          });
+
+        setProjects(setFilteredProjects);
+      })
+      .catch((err) => {
+        console.error("Error fetching projects:", err);
+      });
+  }, []);
 
   const estimationData = {
     img: bgImg,
-    title: 'Estimation & Drafting',
-    desc: '',
+    title: "Estimation & Drafting",
+    desc: "",
   };
   return (
     <div className="bg-gray-50">

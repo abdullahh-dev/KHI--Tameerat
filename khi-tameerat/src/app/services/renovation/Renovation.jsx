@@ -1,42 +1,39 @@
-import React from 'react';
-import BasicTabs from '../../_lib/Tabs.jsx';
-import bgImg from '../../../assets/images/bg-images/renovation.jpg';
-import img1P1 from '../../../assets/images/Renovation_images/14MarlaHouse1.jpeg';
-import img2P1 from '../../../assets/images/Renovation_images/14MarlaHouse2.jpeg';
-import img3P1 from '../../../assets/images/Renovation_images/14MarlaHouse3.jpeg';
-import img1P2 from '../../../assets/images/Renovation_images/SportsComplex1.jpeg';
-import img2P2 from '../../../assets/images/Renovation_images/SportsComplex2.jpeg';
-import img3P2 from '../../../assets/images/Renovation_images/SportsComplex3.jpeg';
-import img1P3 from '../../../assets/images/Renovation_images/chakshahzad1.jpeg';
-import img2P3 from '../../../assets/images/Renovation_images/chakshahzad2.jpeg';
+import bgImg from "../../../assets/images/bg-images/renovation.jpg";
+import BasicTabs from "../../_lib/Tabs.jsx";
 
-import BGSection from '../../components/BgSection';
+import axios from "axios";
+import BGSection from "../../components/BgSection";
+import { backend_url } from "../../../config/index.js";
+import { useEffect, useState } from "react";
+
 function Renovation() {
-  const projects = [
-    {
-      images: [img1P1, img2P1, img3P1],
-      title: 'Renovation of Residential Houses, Pakistan',
-      description:
-        'Revitalizing homes with tailored renovations that blend functionality with aesthetic appeal throughout Pakistan.',
-    },
-    {
-      images: [img1P2, img2P2, img3P2],
-      title: 'Refurbishment of Sports Complex, Islamabad, Pakistan',
-      description:
-        'Reviving the heart of sports in Islamabad with a comprehensive refurbishment, enhancing facilities for athletes and enthusiasts alike.',
-    },
-    {
-      images: [img1P3, img2P3],
-      title: 'Renovation of Ware House of IDress, Islamabad, Pakistan',
-      description:
-        'Elevating operational efficiency and modernizing infrastructure to optimize storage solutions for iDress in Islamabad, Pakistan.',
-    },
-  ];
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`${backend_url}/api/projects?sort=title:asc&populate=*`)
+      .then((res) => {
+        const setFilteredProjects = res.data.data
+          .filter((p) => p.category === "renovation")
+          .map((project) => {
+            return {
+              id: project.id,
+              title: project.title,
+              description: project.description,
+              images: project.project_image.map((img) => `${img.url}`),
+            };
+          });
+
+        setProjects(setFilteredProjects);
+      })
+      .catch((err) => {
+        console.error("Error fetching projects:", err);
+      });
+  }, []);
 
   const renovationData = {
     img: bgImg,
-    title: 'Renovation',
-    desc: '',
+    title: "Renovation",
+    desc: "",
   };
 
   return (
