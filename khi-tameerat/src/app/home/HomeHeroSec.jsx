@@ -1,7 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import bgImg from '/src/assets/images/bg-images/home.jpg';
-import { HiArrowLongRight } from 'react-icons/hi2';
+import { HiArrowLongRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
+import bgImg from "/src/assets/images/bg-images/home.jpg";
 function HomeHeroSec() {
   return (
     <div className="relative w-full h-[60vh] overflow-hidden md:h-[90vh]">
@@ -30,8 +29,8 @@ function HomeHeroSec() {
           process, from concept to completion, we make your vision a reality.
         </p>
         <div className="flex flex-col w-full justify-center md:flex-row gap-2 md:space-x-4 mt-4 md:mt-12 font-semibold">
-          <Link to="/contact">
-            <button className="bg-[#9dd221] text-[16px] group px-[20px] text-[#333333] py-[8px] rounded-[4px]">
+          <button className="bg-[#9dd221] text-[16px] group px-[20px] text-[#333333] py-[8px] rounded-[4px]">
+            <Link to="/contact">
               <div className="inline-block transition-all duration-500">
                 Get in Touch
                 <HiArrowLongRight
@@ -39,8 +38,8 @@ function HomeHeroSec() {
                   className="inline-block group-hover:translate-x-[3px] transition-all duration-500 ml-[4px]"
                 />
               </div>
-            </button>
-          </Link>
+            </Link>
+          </button>
           <button className="bg-white/20 border text-[16px] px-[20px] py-[8px] group rounded-[4px]">
             <Link to="/about">
               Learn More

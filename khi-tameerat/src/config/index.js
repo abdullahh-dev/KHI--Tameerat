@@ -1,1 +1,1 @@
-// export const backend_url = "https://bold-thrill-881a7f665e.strapiapp.com";
+export const backend_url = "https://leading-luck-fe04824f00.strapiapp.com";
