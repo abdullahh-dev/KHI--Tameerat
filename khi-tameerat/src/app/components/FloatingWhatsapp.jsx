@@ -2,7 +2,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 const FloatingWhatsApp = () => {
-  const phoneNumber = "923001234567"; // e.g., Pakistani number without + and spaces
+  const phoneNumber = "923121955286";
   const message = "Hello! I want to inquire about your services.";
 
   const openWhatsApp = () => {
