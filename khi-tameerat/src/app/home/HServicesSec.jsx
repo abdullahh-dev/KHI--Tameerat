@@ -1,25 +1,25 @@
-import React from 'react';
-import constructionImg from '../../assets/images/services-media/construction.png';
-import estimationImg from '../../assets/images/services-media/estimation.png';
-import renovationImg from '../../assets/images/services-media/renovation.png';
-import { Link, Navigate, Router } from 'react-router-dom';
+import React from "react";
+import constructionImg from "../../assets/images/services-media/construction.png";
+import estimationImg from "../../assets/images/services-media/estimation.png";
+import renovationImg from "../../assets/images/services-media/renovation.png";
+import { Link, Navigate, Router } from "react-router-dom";
 function HServicesSec() {
   const servicesData = [
     {
-      title: 'Construction',
+      title: "Construction",
       src: constructionImg,
-      link: 'construction',
+      link: "construction",
     },
-    {
-      title: 'Estimation & Drafting',
-      src: estimationImg,
-      link: 'estimation',
-    },
-    {
-      title: 'Renovation',
-      src: renovationImg,
-      link: 'renovation',
-    },
+    // {
+    //   title: 'Estimation & Drafting',
+    //   src: estimationImg,
+    //   link: 'estimation',
+    // },
+    // {
+    //   title: 'Renovation',
+    //   src: renovationImg,
+    //   link: 'renovation',
+    // },
   ];
 
   return (
@@ -36,7 +36,8 @@ function HServicesSec() {
         {servicesData.map((s, index) => (
           <div
             key={index}
-            className="lg:max-w-[320px] w-[100%] md:max-w-[320px] gap-4 overflow-hidden group relative h-[410px] cursor-pointer rounded-[4px]">
+            className="lg:max-w-[390px] w-[100%] md:max-w-[320px] gap-4 overflow-hidden group relative h-[430px] cursor-pointer rounded-[4px]"
+          >
             <div className="absolute bottom-[0px] left-4 group-hover:bottom-36 z-[99999] transition-all duration-1000 text-white">
               <h1 className="text-[24px] leading-tight font-semibold">
                 {s.title}
@@ -44,8 +45,9 @@ function HServicesSec() {
               <span className="opacity-0 group-hover:opacity-100 transition-all duration-700 ">
                 <Link
                   to={`/${s.link}`}
-                  className="inline-block border-[2px] p-2 mt-4 hover:bg-[#9ED220] hover:text-[#333333] text-[13px]">
-                  View Details
+                  className="inline-block border-[2px] p-2 mt-4 hover:bg-[#9ED220] hover:text-[#333333] text-[13px]"
+                >
+                  View Projects
                 </Link>
               </span>
             </div>

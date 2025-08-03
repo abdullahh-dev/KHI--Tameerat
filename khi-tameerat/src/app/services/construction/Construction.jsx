@@ -32,14 +32,14 @@ function Renovation() {
 
   const constructionData = {
     img: bgImg,
-    title: "Construction",
+    title: "Projects",
     desc: "Exploring groundbreaking projects, innovations, and advancements in the construction industry.",
   };
 
   return (
     <div className="bg-gray-50">
       <BGSection data={constructionData} />
-      <BasicTabs data={myProjects} title="Our Construction Projects" />
+      <BasicTabs data={myProjects} title="Our Projects" />
     </div>
   );
 }
